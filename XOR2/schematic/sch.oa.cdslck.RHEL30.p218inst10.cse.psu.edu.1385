@@ -12,5 +12,5 @@ ProcessCreationTime_Readable   Wed Nov 23 19:51:48 2016 EST
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /home/grads/sms821/EE416/Project_416/inverter_tb/schematic/sch.oa.cdslck
-TimeEditLocked                 Wed Nov 23 19:54:06 2016 EST
+FilePathUsedToEditLock         /home/grads/sms821/EE416/Project_416/XOR2/schematic/sch.oa.cdslck
+TimeEditLocked                 Wed Nov 23 21:20:20 2016 EST
