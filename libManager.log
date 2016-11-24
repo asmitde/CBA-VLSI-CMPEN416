@@ -1,0 +1,18 @@
+\o Program:		@(#)$CDS: libManager version 6.1.6 - CAT33 07/24/2013 22:31 (sjfbm151) $
+\o Sub version:		sub-version  s003 
+\o Arguments:		-mpssession virtuoso20371 -mpshost p218inst10.cse.psu.edu 
+\o Working Directory:	p218inst10.cse.psu.edu:/home/grads/sms821/EE416/Project_416
+\o 64-bit offsets
+\o Qt version: 		4.7.2
+\o Log file is "/home/grads/sms821/EE416/Project_416/libManager.log".
+\o Opening libManager window.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(348 31 600 448))
+\o changeWorkingDir("/home/grads/sms821/EE416/Project_416") unnecessary.
+\o ddSetForcedLib("") unnecessary.
+\o MPS service: map window
+\o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\o libManager is exiting.
+\a exit(0)
