@@ -1,0 +1,3 @@
+projectDir = '"./simulation"
+designInfo = '("Project_416" "inverter_tb" "schematic" "hspiceD")
+descriptionText = "None"
