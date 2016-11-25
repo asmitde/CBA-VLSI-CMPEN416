@@ -1,0 +1,5 @@
+# Those annoying lock files!
+*.cdslck*
+
+# Auto backups
+*-
