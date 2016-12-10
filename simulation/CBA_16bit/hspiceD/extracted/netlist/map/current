@@ -1,0 +1,24 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "CBA_16bit"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  hierDelim "^"
+  netlistDir "/home/grads/sms821/EE416/simulation/CBA_16bit/hspiceD/extracted/netlist"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "Project_416/CBA_16bit/extracted" "CBA_16bit" )
+ )
+( term
+ )
+( param
+ )
+( "CBA_16bit" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,12 @@
+mp3 sum cin net17 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp2 net17 p_bar vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp1 sum cin_bar net18 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp0 net18 p vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mn3 net15 p_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn2 sum cin_bar net15 gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn1 net16 p gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn0 sum cin net16 gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+xi1 gnd cin cin_bar vdd inverter
+xi0 gnd p p_bar vdd inverter
+.ends Sum
+** End of subcircuit definition.

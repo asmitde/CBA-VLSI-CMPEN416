@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+Assignment2/symbol/schematic symbol
+Assignment2/testbench/schematic testbench
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

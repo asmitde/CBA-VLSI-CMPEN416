@@ -1,0 +1,13 @@
+HEADER
+"PSFversion" "1.00"
+"I0v" "xi0v"
+"I1v" "xi1v"
+"I0n" "Sum"
+"I1n" "carry"
+"Vddv" "(FUNCTION (plus (root \"I1/Vdd\") (root \"I0/Vdd\")))v"
+"Gndv" "(FUNCTION (plus (root \"I1/Gnd\") (root \"I0/gnd\")))v"
+"Pv" "(FUNCTION (plus (root \"I1/P\") (root \"I0/P\")))v"
+"Gv" "(FUNCTION (plus (root \"I1/G\")))v"
+"Cinv" "(FUNCTION (plus (root \"I1/Cin\") (root \"I0/Cin\")))v"
+"Carryv" "(FUNCTION (plus (root \"I1/Carry\")))v"
+"Sumv" "(FUNCTION (plus (root \"I0/Sum\")))v"

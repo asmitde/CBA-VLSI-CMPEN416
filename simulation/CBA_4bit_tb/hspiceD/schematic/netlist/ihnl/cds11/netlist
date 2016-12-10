@@ -1,0 +1,5 @@
+xi5 prop2 net8 prop3 vdd gnd NAND2
+xi4 prop0 net9 prop1 vdd gnd NAND2
+xi6 net9 bypass net8 vdd gnd NOR2
+.ends bypass
+** End of subcircuit definition.

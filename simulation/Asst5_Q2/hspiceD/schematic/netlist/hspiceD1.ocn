@@ -1,0 +1,17 @@
+simulator( 'hspiceD )
+design(	 "/home/grads/sms821/EE416/simulation/Asst5_Q2/hspiceD/schematic/netlist/netlist")
+resultsDir( "/home/grads/sms821/EE416/simulation/Asst5_Q2/hspiceD/schematic" )
+modelFile( 
+    '("/home/software/cadence/local/ncsu/models/hspice/public/tsmc20N.m" "")
+    '("/home/software/cadence/local/ncsu/models/hspice/public/tsmc20P.m" "")
+)
+analysis('tran ?start "0"  ?stop "3u"  ?step "0.01u"  )
+option(	'TEMPDC  "25.0" 
+)
+temp( 25.0 ) 
+run()
+modelFile( 
+    '("/home/software/cadence/local/ncsu/models/hspice/public/tsmc20N.m" "")
+    '("/home/software/cadence/local/ncsu/models/hspice/public/tsmc20P.m" "")
+)
+run()

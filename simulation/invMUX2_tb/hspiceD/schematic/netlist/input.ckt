@@ -1,0 +1,56 @@
+** Generated for: hspiceD
+** Generated on: Nov 23 21:40:00 2016
+** Design library name: Project_416
+** Design cell name: invMUX2_tb
+** Design view name: schematic
+.PARAM beta=3
+
+
+.TRAN 10e-9 3e-6 START=0.0
+
+.OP
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20N.m"
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20P.m"
+
+** Library name: Project_416
+** Cell name: inverter
+** View name: schematic
+.subckt inverter gnd in in_bar vdd
+mp0 in_bar in vdd vdd tsmc20P L=200e-9 W=650e-9 AD=325e-15 AS=325e-15 PD=2.3e-6 PS=2.3e-6 M=1
+mn0 in_bar in gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+.ends inverter
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: invMUX2
+** View name: schematic
+.subckt invMUX2 in0 in1 out s vdd gnd
+mn3 out in1 net22 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn2 net22 s gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn1 out in0 net23 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn0 net23 s__ gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mp3 net16 in0 vdd vdd tsmc20P L=200e-9 W=800e-9 AD=400e-15 AS=400e-15 PD=2.6e-6 PS=2.6e-6 M=1
+mp2 net16 s__ vdd vdd tsmc20P L=200e-9 W=800e-9 AD=400e-15 AS=400e-15 PD=2.6e-6 PS=2.6e-6 M=1
+mp1 out s net16 vdd tsmc20P L=200e-9 W=800e-9 AD=400e-15 AS=400e-15 PD=2.6e-6 PS=2.6e-6 M=1
+mp0 out in1 net16 vdd tsmc20P L=200e-9 W=800e-9 AD=400e-15 AS=400e-15 PD=2.6e-6 PS=2.6e-6 M=1
+xi0 gnd s s__ vdd inverter
+.ends invMUX2
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: invMUX2_tb
+** View name: schematic
+xi0 in0 in1 out s net5 0 invMUX2
+v1 in1 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v0 in0 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v4 s 0 DC=0
+v3 net5 0 DC=1.8
+c0 out 0 5e-15 M=1
+.END

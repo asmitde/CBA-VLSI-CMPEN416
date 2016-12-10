@@ -1,0 +1,30 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "invMUX2_tb"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  globalList "gnd!"
+  hierDelim "^"
+  netlistDir "/home/grads/sms821/EE416/simulation/invMUX2_tb/hspiceD/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "Project_416/inverter/schematic" "inverter" )
+( "Project_416/invMUX2_tb/schematic" "invMUX2_tb" )
+( "Project_416/invMUX2/schematic" "invMUX2" )
+ )
+( term
+ )
+( param
+ )
+( "invMUX2" "ihnl/cds1/map" )
+( "invMUX2_tb" "ihnl/cds2/map" )
+( "inverter" "ihnl/cds0/map" )
+ )

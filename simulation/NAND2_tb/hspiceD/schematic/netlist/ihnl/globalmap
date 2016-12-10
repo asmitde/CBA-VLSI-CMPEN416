@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+Project_416/NAND2/schematic NAND2
+Assignment2/NAND2_tb/schematic NAND2_tb
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+beta beta
+$endparam

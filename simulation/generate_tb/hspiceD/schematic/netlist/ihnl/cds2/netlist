@@ -1,0 +1,10 @@
+
+** Library name: Assignment2
+** Cell name: generate_tb
+** View name: schematic
+v2 net5 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v1 net4 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+c0 net6 0 5e-15 M=1
+v0 vdd 0 DC=1.8
+xi1 0 net7 net6 vdd inverter
+xi3 net4 net7 net5 vdd 0 NAND2

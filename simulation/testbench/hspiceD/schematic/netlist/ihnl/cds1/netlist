@@ -1,0 +1,7 @@
+
+** Library name: Assignment2
+** Cell name: testbench
+** View name: schematic
+xi0 0 net5 net4 net2 symbol
+v1 net5 0
+v0 net2 0 DC=1.8

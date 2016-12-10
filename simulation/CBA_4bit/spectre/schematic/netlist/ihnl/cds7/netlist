@@ -1,0 +1,27 @@
+
+// Library name: Project_416
+// Cell name: CBA_4bit
+// View name: schematic
+I3 (Co_0 Cin G0 0 P0 Sum0 Vdd) full_adder
+I2 (Co_1 Co_0 G1 0 P1 Sum1 Vdd) full_adder
+I1 (Co_2 Co_1 G2 0 P2 Sum2 Vdd) full_adder
+I0 (Co_3 Co_2 G3 0 P3 Sum3 Vdd) full_adder
+I7 (A0 B0 G0 0 P0 Vdd) setup
+I6 (A1 B1 G1 0 P1 Vdd) setup
+I5 (A2 B2 G2 0 P2 Vdd) setup
+I4 (A3 B3 G3 0 P3 Vdd) setup
+C3 (Sum0 0) capacitor c=5f m=1
+C2 (Sum1 0) capacitor c=5f m=1
+C1 (Sum2 0) capacitor c=5f m=1
+C0 (Sum3 0) capacitor c=5f m=1
+V0 (Vdd 0) vsource type=dc dc=1.8
+C4 (Co_3 0) capacitor c=5f m=1
+V9 (Cin 0) vsource type=pulse val0=0 val1=0
+V8 (B0 0) vsource type=pulse val0=0 val1=0
+V7 (B1 0) vsource type=pulse val0=0 val1=0
+V6 (B2 0) vsource type=pulse val0=0 val1=0
+V5 (B3 0) vsource type=pulse val0=0 val1=0
+V4 (A3 0) vsource type=pulse val0=0 val1=1.8 period=8u rise=40n fall=40n width=4u
+V3 (A2 0) vsource type=pulse val0=0 val1=1.8 period=6u rise=40n fall=40n width=3u
+V2 (A1 0) vsource type=pulse val0=0 val1=1.8 period=4u rise=40n fall=40n width=2u
+V1 (A0 0) vsource type=pulse val0=0 val1=1.8 period=2u rise=40n fall=40n width=1u

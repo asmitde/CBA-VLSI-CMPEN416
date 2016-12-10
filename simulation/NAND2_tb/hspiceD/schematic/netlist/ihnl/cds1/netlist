@@ -1,0 +1,9 @@
+
+** Library name: Assignment2
+** Cell name: NAND2_tb
+** View name: schematic
+xi0 net3 net5 net4 net2 0 NAND2
+v1 net4 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v0 net3 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v2 net2 0 DC=1.8
+c0 net5 0 5e-15 M=1

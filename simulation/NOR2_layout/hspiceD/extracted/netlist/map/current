@@ -1,0 +1,24 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "NOR2_layout"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  hierDelim "^"
+  netlistDir "/home/grads/sms821/EE416/simulation/NOR2_layout/hspiceD/extracted/netlist"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "Project_416/NOR2_layout/extracted" "NOR2_layout" )
+ )
+( term
+ )
+( param
+ )
+( "NOR2_layout" "ihnl/cds0/map" )
+ )

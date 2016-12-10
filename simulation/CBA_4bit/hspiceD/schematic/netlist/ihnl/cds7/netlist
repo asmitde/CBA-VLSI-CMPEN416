@@ -1,0 +1,30 @@
+
+** Library name: Project_416
+** Cell name: CBA_4bit
+** View name: schematic
+xi3 co_0 cin g0 0 p0 sum0 vdd full_adder
+xi2 co_1 co_0 g1 0 p1 sum1 vdd full_adder
+xi1 co_2 co_1 g2 0 p2 sum2 vdd full_adder
+xi0 co_3 co_2 g3 0 p3 sum3 vdd full_adder
+xi7 a0 b0 g0 0 p0 vdd setup
+xi6 a1 b1 g1 0 p1 vdd setup
+xi5 a2 b2 g2 0 p2 vdd setup
+xi4 a3 b3 g3 0 p3 vdd setup
+c5 co3_mux 0 5e-15 M=1
+c3 sum0 0 5e-15 M=1
+c2 sum1 0 5e-15 M=1
+c1 sum2 0 5e-15 M=1
+c0 sum3 0 5e-15 M=1
+v0 vdd 0 DC=1.8
+xi29 0 co3mux_bar co3_mux vdd inverter
+v9 cin 0 PULSE 0 0 0
+v5 b3 0 PULSE 0 0 0
+v6 b2 0 PULSE 0 0 0
+v7 b1 0 PULSE 1.8 1.8 0
+v8 b0 0 PULSE 1.8 1.8 0
+v4 a3 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v3 a2 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v2 a1 0 PULSE 0 0 0
+v1 a0 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+xi24 0 p0 p1 p2 p3 vdd net20 bypass
+xi25 cin co_3 co3mux_bar 0 vdd net20 bypass_mux

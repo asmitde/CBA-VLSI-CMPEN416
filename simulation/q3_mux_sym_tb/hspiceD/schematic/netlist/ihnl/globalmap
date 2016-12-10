@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+Assignment2/q3_mux_sym_tb/schematic q3_mux_sym_tb
+Asst_6/q3_mux_schematic/schematic q3_mux_schematic
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+beta beta
+$endparam

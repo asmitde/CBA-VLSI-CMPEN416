@@ -1,0 +1,293 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Nov 23 01:44:29 2016"
+"date" "Nov 23 01:44:29 2016"
+"simulator" "hspiceD"
+"netlistDir" "../netlist"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("beta")
+)
+"beta=1/psf" "runObject" (
+(
+"../beta=1/psf/logFile"
+"../beta=1/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=1"
+ "beta" 1.000000e+00
+)
+
+"beta=1.2/psf" "runObject" (
+(
+"../beta=1.2/psf/logFile"
+"../beta=1.2/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=1.2"
+ "beta" 1.200000e+00
+)
+
+"beta=1.4/psf" "runObject" (
+(
+"../beta=1.4/psf/logFile"
+"../beta=1.4/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=1.4"
+ "beta" 1.400000e+00
+)
+
+"beta=1.6/psf" "runObject" (
+(
+"../beta=1.6/psf/logFile"
+"../beta=1.6/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=1.6"
+ "beta" 1.600000e+00
+)
+
+"beta=1.8/psf" "runObject" (
+(
+"../beta=1.8/psf/logFile"
+"../beta=1.8/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=1.8"
+ "beta" 1.800000e+00
+)
+
+"beta=2/psf" "runObject" (
+(
+"../beta=2/psf/logFile"
+"../beta=2/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=2"
+ "beta" 2.000000e+00
+)
+
+"beta=2.2/psf" "runObject" (
+(
+"../beta=2.2/psf/logFile"
+"../beta=2.2/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=2.2"
+ "beta" 2.200000e+00
+)
+
+"beta=2.4/psf" "runObject" (
+(
+"../beta=2.4/psf/logFile"
+"../beta=2.4/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=2.4"
+ "beta" 2.400000e+00
+)
+
+"beta=2.6/psf" "runObject" (
+(
+"../beta=2.6/psf/logFile"
+"../beta=2.6/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=2.6"
+ "beta" 2.600000e+00
+)
+
+"beta=2.8/psf" "runObject" (
+(
+"../beta=2.8/psf/logFile"
+"../beta=2.8/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=2.8"
+ "beta" 2.800000e+00
+)
+
+"beta=3/psf" "runObject" (
+(
+"../beta=3/psf/logFile"
+"../beta=3/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=3"
+ "beta" 3.000000e+00
+)
+
+"beta=3.2/psf" "runObject" (
+(
+"../beta=3.2/psf/logFile"
+"../beta=3.2/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=3.2"
+ "beta" 3.200000e+00
+)
+
+"beta=3.4/psf" "runObject" (
+(
+"../beta=3.4/psf/logFile"
+"../beta=3.4/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=3.4"
+ "beta" 3.400000e+00
+)
+
+"beta=3.6/psf" "runObject" (
+(
+"../beta=3.6/psf/logFile"
+"../beta=3.6/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=3.6"
+ "beta" 3.600000e+00
+)
+
+"beta=3.8/psf" "runObject" (
+(
+"../beta=3.8/psf/logFile"
+"../beta=3.8/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=3.8"
+ "beta" 3.800000e+00
+)
+
+"beta=4/psf" "runObject" (
+(
+"../beta=4/psf/logFile"
+"../beta=4/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=4"
+ "beta" 4.000000e+00
+)
+
+"beta=4.2/psf" "runObject" (
+(
+"../beta=4.2/psf/logFile"
+"../beta=4.2/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=4.2"
+ "beta" 4.200000e+00
+)
+
+"beta=4.4/psf" "runObject" (
+(
+"../beta=4.4/psf/logFile"
+"../beta=4.4/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=4.4"
+ "beta" 4.400000e+00
+)
+
+"beta=4.6/psf" "runObject" (
+(
+"../beta=4.6/psf/logFile"
+"../beta=4.6/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=4.6"
+ "beta" 4.600000e+00
+)
+
+"beta=4.8/psf" "runObject" (
+(
+"../beta=4.8/psf/logFile"
+"../beta=4.8/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=4.8"
+ "beta" 4.800000e+00
+)
+
+"beta=5/psf" "runObject" (
+(
+"../beta=5/psf/logFile"
+"../beta=5/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../beta=5"
+ "beta" 5.000000e+00
+)
+
+END

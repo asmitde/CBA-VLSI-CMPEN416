@@ -1,0 +1,12 @@
+
+
+.PROBE DC
++    I3(mp0)
+.DC vds 0.0 -1.8 50e-3
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2

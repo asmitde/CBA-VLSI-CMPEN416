@@ -1,0 +1,8 @@
+
+** Library name: Project_416
+** Cell name: inverter_tb
+** View name: schematic
+xi0 0 net3 net4 net2 inverter
+c0 net4 0 5e-15 M=1
+v0 net2 0 DC=1.8
+v1 net3 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6

@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"N1v" "mn1v"
+"P0v" "mp0v"
+"N1n" "NCSU_Analog_Parts_nmos4_hspiceD"
+"P0n" "NCSU_Analog_Parts_pmos4_hspiceD"
+"outv" "(FUNCTION (plus (root \"N1/D\") (root \"P0/D\")))v"
+"inv" "(FUNCTION (plus (root \"N1/G\") (root \"P0/G\")))v"
+"vddv" "(FUNCTION (plus (root \"P0/B\") (root \"P0/S\")))v"
+"gndv" "(FUNCTION (plus (root \"N1/S\") (root \"N1/B\")))v"

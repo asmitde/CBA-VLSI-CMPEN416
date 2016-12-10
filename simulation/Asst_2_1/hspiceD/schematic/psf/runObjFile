@@ -1,0 +1,46 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Sep 15 01:01:42 2016"
+"date" "Sep 15 01:01:42 2016"
+"simulator" "hspiceD"
+"netlistDir" "../netlist"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("vds")
+)
+"vds=0.05/psf" "runObject" (
+(
+"../vds=0.05/psf/logFile"
+"../vds=0.05/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../vds=0.05"
+ "vds" 5.000000e-02
+)
+
+"vds=1.8/psf" "runObject" (
+(
+"../vds=1.8/psf/logFile"
+"../vds=1.8/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../vds=1.8"
+ "vds" 1.800000e+00
+)
+
+END

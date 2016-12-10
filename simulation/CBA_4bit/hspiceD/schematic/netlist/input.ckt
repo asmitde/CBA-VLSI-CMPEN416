@@ -1,0 +1,176 @@
+** Generated for: hspiceD
+** Generated on: Nov  7 20:12:11 2016
+** Design library name: Project_416
+** Design cell name: CBA_4bit
+** Design view name: schematic
+.PARAM beta=2
+
+
+.TRAN 10e-9 3e-6 START=0.0
+
+.OP
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20N.m"
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20P.m"
+
+** Library name: Project_416
+** Cell name: inverter
+** View name: schematic
+.subckt inverter gnd in in_bar vdd
+mp0 in_bar in vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mn0 in_bar in gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+.ends inverter
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: Sum
+** View name: schematic
+.subckt Sum cin gnd p sum vdd
+mp3 sum cin net17 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp2 net17 p_bar vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp1 sum cin_bar net18 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp0 net18 p vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mn3 net15 p_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn2 sum cin_bar net15 gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn1 net16 p gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn0 sum cin net16 gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+xi1 gnd cin cin_bar vdd inverter
+xi0 gnd p p_bar vdd inverter
+.ends Sum
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: carry
+** View name: schematic
+.subckt carry carry cin g gnd p vdd
+mp2 carry g_bar vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp1 carry p_bar net29 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp0 net29 cin_bar vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mn2 net15 g_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn1 carry cin_bar net15 gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn0 carry p_bar net15 gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+xi2 gnd cin cin_bar vdd inverter
+xi1 gnd g g_bar vdd inverter
+xi0 gnd p p_bar vdd inverter
+.ends carry
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: full_adder
+** View name: schematic
+.subckt full_adder carry cin g gnd p sum vdd
+xi0 cin gnd p sum vdd Sum
+xi1 carry cin g gnd p vdd carry
+.ends full_adder
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: generate
+** View name: schematic
+.subckt generate a b g gnd vdd
+m1 g b_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+m0 g a_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mp0 g b_bar net21 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp1 net21 a_bar vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+xi1 gnd b b_bar vdd inverter
+xi0 gnd a a_bar vdd inverter
+.ends generate
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: propagate
+** View name: schematic
+.subckt propagate a b gnd p vdd
+mp2 net13 a_bar vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp3 p b net13 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp0 net14 a vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp1 p b_bar net14 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+xi1 gnd b b_bar vdd inverter
+xi0 gnd a a_bar vdd inverter
+mn3 net11 a_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn2 p b_bar net11 gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn1 net12 a gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn0 p b net12 gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+.ends propagate
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: setup
+** View name: schematic
+.subckt setup a b g gnd p vdd
+xi0 a b g gnd vdd generate
+xi1 a b gnd p vdd propagate
+.ends setup
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: bypass
+** View name: schematic
+.subckt bypass gnd prop0 prop1 prop2 prop3 vdd bp
+mn3 bp p0_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn2 bp p1_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn1 bp p2_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn0 bp p3_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mp3 net33 p0_bar vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp2 net34 p1_bar net33 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp1 net35 p2_bar net34 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp0 bp p3_bar net35 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+xi3 gnd prop3 p3_bar vdd inverter
+xi2 gnd prop2 p2_bar vdd inverter
+xi1 gnd prop0 p0_bar vdd inverter
+xi0 gnd prop1 p1_bar vdd inverter
+.ends bypass
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: bypass_mux
+** View name: schematic
+.subckt bypass_mux cin co3 co3mux_bar gnd vdd bypass
+mp3 net14 co3 vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp2 co3mux_bar bypass net14 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp1 co3mux_bar bypass_bar net15 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp0 net15 cin vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mn3 net13 co3 gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn2 co3mux_bar bypass_bar net13 gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn1 net16 cin gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn0 co3mux_bar bypass net16 gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+xi0 gnd bypass bypass_bar vdd inverter
+.ends bypass_mux
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: CBA_4bit
+** View name: schematic
+xi3 co_0 cin g0 0 p0 sum0 vdd full_adder
+xi2 co_1 co_0 g1 0 p1 sum1 vdd full_adder
+xi1 co_2 co_1 g2 0 p2 sum2 vdd full_adder
+xi0 co_3 co_2 g3 0 p3 sum3 vdd full_adder
+xi7 a0 b0 g0 0 p0 vdd setup
+xi6 a1 b1 g1 0 p1 vdd setup
+xi5 a2 b2 g2 0 p2 vdd setup
+xi4 a3 b3 g3 0 p3 vdd setup
+c5 co3_mux 0 5e-15 M=1
+c3 sum0 0 5e-15 M=1
+c2 sum1 0 5e-15 M=1
+c1 sum2 0 5e-15 M=1
+c0 sum3 0 5e-15 M=1
+v0 vdd 0 DC=1.8
+xi29 0 co3mux_bar co3_mux vdd inverter
+v9 cin 0 PULSE 0 0 0
+v5 b3 0 PULSE 0 0 0
+v6 b2 0 PULSE 0 0 0
+v7 b1 0 PULSE 1.8 1.8 0
+v8 b0 0 PULSE 1.8 1.8 0
+v4 a3 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v3 a2 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v2 a1 0 PULSE 0 0 0
+v1 a0 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+xi24 0 p0 p1 p2 p3 vdd net20 bypass
+xi25 cin co_3 co3mux_bar 0 vdd net20 bypass_mux
+.END

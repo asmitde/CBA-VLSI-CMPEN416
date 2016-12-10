@@ -1,0 +1,41 @@
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Nov 23 20:53:37 2016
+WARNING (OSSHNL-225): The design variable 'beta', used in the last netlisting
+session in the current
+run directory is not used in this netlisting session. The
+netlist(s) generated
+in the last netlisting session cannot be reused for
+incremental netlisting.
+Therefore re-netlisting the design.
+
+End netlisting Nov 23 20:53:38 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Nov 23 20:54:48 2016
+End netlisting Nov 23 20:54:48 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Nov 23 20:55:43 2016
+End netlisting Nov 23 20:55:43 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Nov 23 20:58:20 2016
+End netlisting Nov 23 20:58:20 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Nov 23 21:07:29 2016
+End netlisting Nov 23 21:07:29 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Nov 23 21:07:54 2016
+End netlisting Nov 23 21:07:54 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Nov 23 21:08:55 2016
+End netlisting Nov 23 21:08:55 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Nov 23 21:10:04 2016
+End netlisting Nov 23 21:10:04 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Nov 23 21:11:22 2016
+End netlisting Nov 23 21:11:22 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Nov 23 21:13:57 2016
+End netlisting Nov 23 21:13:57 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Nov 23 21:15:05 2016
+End netlisting Nov 23 21:15:05 2016

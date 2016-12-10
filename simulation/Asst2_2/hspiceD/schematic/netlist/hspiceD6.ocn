@@ -1,0 +1,18 @@
+simulator( 'hspiceD )
+design(	 "/home/grads/sms821/EE416/simulation/Asst2_2/hspiceD/schematic/netlist/netlist")
+resultsDir( "/home/grads/sms821/EE416/simulation/Asst2_2/hspiceD/schematic" )
+modelFile( 
+    '("/home/software/cadence/local/ncsu/models/hspice/public/tsmc20N.m" "")
+    '("/home/software/cadence/local/ncsu/models/hspice/public/tsmc20P.m" "")
+)
+analysis('dc ?source "vgs"  ?start "0"  ?stop "-1.8"  
+		?stepSize "0.05"  )
+desVar(	  "vgs" -1.8	)
+desVar(	  "vds" -1.8	)
+option(	'TEMPDC  "25.0" 
+)
+save( 'i "/P0/S" )
+temp( 25.0 ) 
+run()
+selectResult( 'dc )
+plot(getData("/P0/S") )

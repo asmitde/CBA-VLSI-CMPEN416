@@ -1,0 +1,4 @@
+xi0 cin gnd p sum vdd Sum
+xi1 carry cin g gnd p vdd carry
+.ends full_adder
+** End of subcircuit definition.

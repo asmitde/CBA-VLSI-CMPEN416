@@ -1,0 +1,56 @@
+header
+"PSFversion" "1.00" 
+"simulator" "HSPICE"
+"version" "H-2013.03 32-BIT" 
+"rundate" "18:18:27 09/14/2016 " 
+"runtitle" "** generated for: hspiced                                         " 
+"runtype" "logFile"
+TYPE
+"analysisInst" STRUCT(
+"analysisType" STRING *
+"dataFile" STRING *
+"format" STRING *
+"parent" STRING *
+"sweepVariable" ARRAY ( * ) STRING *
+"description" STRING * )
+VALUE
+"srcSweep" "analysisInst" ( 
+"DC Sweep"
+"input.sw0"
+"PSF"
+""
+()
+"DC Sweep"
+)
+"opBegin" "analysisInst" ( 
+"Operating Point"
+"input.op0"
+"PSF"
+""
+()
+"Operating Point"
+)
+"timeSweep" "analysisInst" ( 
+"Transient Analysis"
+"input.tr0"
+"PSF"
+""
+()
+"Transient Analysis"
+)
+"opEnd" "analysisInst" ( 
+"Operating Point"
+"input.op0@30"
+"PSF"
+""
+()
+"Operating Point"
+)
+"summary" "analysisInst" ( 
+"Summary Information"
+"input.su0"
+"PSF"
+""
+()
+"Summary Information"
+)

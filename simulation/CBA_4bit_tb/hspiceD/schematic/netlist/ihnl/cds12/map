@@ -1,0 +1,58 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  hierDelim "^"
+ )
+( net
+( "A2" "a2" )
+( "B2" "b2" )
+( "Co_1" "co_1" )
+( "B3" "b3" )
+( "A3" "a3" )
+( "Co3_mux" "co3_mux" )
+( "Sum2" "sum2" )
+( "A0" "a0" )
+( "Cin" "cin" )
+( "Sum3" "sum3" )
+( "P3" "p3" )
+( "Vdd" "vdd" )
+( "P1" "p1" )
+( "P2" "p2" )
+( "G1" "g1" )
+( "Co_2" "co_2" )
+( "B1" "b1" )
+( "Co3mux_bar" "co3mux_bar" )
+( "G2" "g2" )
+( "P0" "p0" )
+( "Sum0" "sum0" )
+( "Co_0" "co_0" )
+( "G3" "g3" )
+( "Co_3" "co_3" )
+( "G0" "g0" )
+( "A1" "a1" )
+( "Gnd" "gnd" )
+( "B0" "b0" )
+( "Sum1" "sum1" )
+ )
+( inst
+( "I24" "xi24" )
+( "I3" "xi3" )
+( "I1" "xi1" )
+( "I6" "xi6" )
+( "I5" "xi5" )
+( "I7" "xi7" )
+( "I2" "xi2" )
+( "I29" "xi29" )
+( "I0" "xi0" )
+( "I4" "xi4" )
+( "Bypass" "xbypass" )
+ )
+( model
+ )
+( term
+ )
+( param
+ )
+ )

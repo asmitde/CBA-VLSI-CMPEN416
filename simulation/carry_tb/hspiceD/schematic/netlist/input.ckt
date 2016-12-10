@@ -1,0 +1,56 @@
+** Generated for: hspiceD
+** Generated on: Nov 23 22:08:50 2016
+** Design library name: Project_416
+** Design cell name: carry_tb
+** Design view name: schematic
+.PARAM beta=3
+
+
+.TRAN 10e-9 3e-6 START=0.0
+
+.OP
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20N.m"
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20P.m"
+
+** Library name: Project_416
+** Cell name: inverter
+** View name: schematic
+.subckt inverter gnd in in_bar vdd
+mp0 in_bar in vdd vdd tsmc20P L=200e-9 W=650e-9 AD=325e-15 AS=325e-15 PD=2.3e-6 PS=2.3e-6 M=1
+mn0 in_bar in gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+.ends inverter
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: carry
+** View name: schematic
+.subckt carry carry cin g gnd p vdd
+mp2 carry g_bar vdd vdd tsmc20P L=200e-9 W=750e-9 AD=375e-15 AS=375e-15 PD=2.5e-6 PS=2.5e-6 M=1
+mp1 carry p_bar net29 vdd tsmc20P L=200e-9 W=750e-9 AD=375e-15 AS=375e-15 PD=2.5e-6 PS=2.5e-6 M=1
+mp0 net29 cin_bar vdd vdd tsmc20P L=200e-9 W=750e-9 AD=375e-15 AS=375e-15 PD=2.5e-6 PS=2.5e-6 M=1
+mn2 net15 g_bar gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn1 carry cin_bar net15 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn0 carry p_bar net15 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+xi2 gnd cin cin_bar vdd inverter
+xi1 gnd g g_bar vdd inverter
+xi0 gnd p p_bar vdd inverter
+.ends carry
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: carry_tb
+** View name: schematic
+xi0 net6 net3 net4 0 net5 net2 carry
+v2 net3 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v1 net4 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v0 net5 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v3 net2 0 DC=1.8
+c0 net6 0 5e-15 M=1
+.END

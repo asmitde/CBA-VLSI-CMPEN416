@@ -1,0 +1,13 @@
+xi3 co_0 cin g0 gnd p0 sum0 vdd full_adder
+xi2 co_1 co_0 g1 gnd p1 sum1 vdd full_adder
+xi1 co_2 co_1 g2 gnd p2 sum2 vdd full_adder
+xi0 co_3 co_2 g3 gnd p3 sum3 vdd full_adder
+xi7 a0 b0 g0 gnd p0 vdd setup
+xi6 a1 b1 g1 gnd p1 vdd setup
+xi5 a2 b2 g2 gnd p2 vdd setup
+xi4 a3 b3 g3 gnd p3 vdd setup
+xbypass co_3 cin co3mux_bar bypass_signal vdd gnd invMUX2
+xi29 gnd co3mux_bar co3_mux vdd inverter
+xi24 p0 p1 p2 p3 vdd bypass_signal gnd bypass
+.ends CBA_4bit
+** End of subcircuit definition.

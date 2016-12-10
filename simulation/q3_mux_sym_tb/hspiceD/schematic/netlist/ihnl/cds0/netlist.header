@@ -1,0 +1,5 @@
+
+** Library name: Asst_6
+** Cell name: q3_mux_schematic
+** View name: schematic
+.subckt q3_mux_schematic a b gnd f s vdd

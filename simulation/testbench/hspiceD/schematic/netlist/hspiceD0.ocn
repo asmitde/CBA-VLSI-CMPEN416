@@ -1,0 +1,16 @@
+simulator( 'hspiceD )
+design(	 "/home/grads/sms821/EE416/simulation/testbench/hspiceD/schematic/netlist/netlist")
+resultsDir( "/home/grads/sms821/EE416/simulation/testbench/hspiceD/schematic" )
+analysis('dc ?source "/V1"  ?start "0"  ?stop "1.8"  
+		?stepSize "0.1"  )
+option(	'TEMPDC  "25.0" 
+)
+temp( 25.0 ) 
+run()
+run()
+run()
+modelFile( 
+    '("/home/software/cadence/local/ncsu/models/hspice/public/tsmc20N.m" "")
+    '("/home/software/cadence/local/ncsu/models/hspice/public/tsmc20P.m" "")
+)
+run()

@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"I0n" "generate"
+"I1n" "propagate"
+"Av" ":1v"
+"Bv" ":2v"
+"Gv" ":3v"
+"Gndv" ":4v"
+"Pv" ":5v"
+"Vddv" ":6v"

@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+assignment4/NAND_schematic/extracted NAND_schematic_extracted
+assignment4/NAND_schematic/schematic NAND_schematic
+assignment4/NAND_tb/schematic NAND_tb
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

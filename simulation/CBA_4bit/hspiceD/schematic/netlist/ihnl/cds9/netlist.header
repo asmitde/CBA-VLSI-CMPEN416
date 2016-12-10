@@ -1,0 +1,5 @@
+
+** Library name: Project_416
+** Cell name: bypass_mux
+** View name: schematic
+.subckt bypass_mux cin co3 co3mux_bar gnd vdd bypass

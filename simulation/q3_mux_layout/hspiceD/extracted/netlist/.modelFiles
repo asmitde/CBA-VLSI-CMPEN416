@@ -1,0 +1,2 @@
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20P.m"
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20N.m"

@@ -1,0 +1,5 @@
+
+** Library name: Project_416
+** Cell name: setup
+** View name: schematic
+.subckt setup a b g gnd p vdd

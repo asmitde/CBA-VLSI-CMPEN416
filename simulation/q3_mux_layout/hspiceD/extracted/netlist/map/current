@@ -1,0 +1,24 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "q3_mux_layout"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  hierDelim "^"
+  netlistDir "/home/grads/sms821/EE416/simulation/q3_mux_layout/hspiceD/extracted/netlist"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "Asst_6/q3_mux_layout/extracted" "q3_mux_layout" )
+ )
+( term
+ )
+( param
+ )
+( "q3_mux_layout" "ihnl/cds0/map" )
+ )

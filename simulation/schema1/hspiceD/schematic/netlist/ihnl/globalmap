@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+Assignment2/schema1/schematic schema1
+$endmodel
+$net
+gnd! 0
+vdd! vdd!
+$endnet
+$param
+$endparam

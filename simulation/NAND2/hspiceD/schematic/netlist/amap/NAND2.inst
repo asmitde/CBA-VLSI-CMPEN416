@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"N1v" "mn1v"
+"N0v" "mn0v"
+"P1v" "mp1v"
+"N1n N0n" "NCSU_Analog_Parts_nmos4_hspiceD"
+"P0v" "mp0v"
+"P1n P0n" "NCSU_Analog_Parts_pmos4_hspiceD"

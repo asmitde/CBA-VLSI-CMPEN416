@@ -1,0 +1,8 @@
+CADENCE IHNL01070
+$model
+Project_416/full_adder/extracted full_adder
+$endmodel
+$net
+$endnet
+$param
+$endparam

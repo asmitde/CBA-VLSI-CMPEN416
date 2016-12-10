@@ -1,0 +1,135 @@
+// Generated for: spectre
+// Generated on: Nov  6 03:56:03 2016
+// Design library name: Project_416
+// Design cell name: CBA_4bit
+// Design view name: schematic
+simulator lang=spectre
+global 0
+parameters beta=2
+
+// Library name: Project_416
+// Cell name: inverter
+// View name: schematic
+subckt inverter Gnd In In_bar Vdd
+    P0 (In_bar In Vdd Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    N0 (In_bar In Gnd Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+ends inverter
+// End of subcircuit definition.
+
+// Library name: Project_416
+// Cell name: Sum
+// View name: schematic
+subckt Sum Cin Gnd P Sum Vdd
+    P3 (Sum Cin net17 Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    P2 (net17 P_bar Vdd Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    P1 (Sum Cin_bar net18 Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    P0 (net18 P Vdd Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    N3 (net15 P_bar Gnd Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N2 (Sum Cin_bar net15 Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N1 (net16 P Gnd Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N0 (Sum Cin net16 Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    I1 (Gnd Cin Cin_bar Vdd) inverter
+    I0 (Gnd P P_bar Vdd) inverter
+ends Sum
+// End of subcircuit definition.
+
+// Library name: Project_416
+// Cell name: carry
+// View name: schematic
+subckt carry Carry Cin G Gnd P Vdd
+    P2 (Carry G_bar Vdd Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    P1 (Carry P_bar net29 Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    P0 (net29 Cin_bar Vdd Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    N2 (net15 G_bar Gnd Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N1 (Carry Cin_bar net15 Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N0 (Carry P_bar net15 Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    I2 (Gnd Cin Cin_bar Vdd) inverter
+    I1 (Gnd G G_bar Vdd) inverter
+    I0 (Gnd P P_bar Vdd) inverter
+ends carry
+// End of subcircuit definition.
+
+// Library name: Project_416
+// Cell name: full_adder
+// View name: schematic
+subckt full_adder Carry Cin G Gnd P Sum Vdd
+    I0 (Cin Gnd P Sum Vdd) Sum
+    I1 (Carry Cin G Gnd P Vdd) carry
+ends full_adder
+// End of subcircuit definition.
+
+// Library name: Project_416
+// Cell name: generate
+// View name: schematic
+subckt generate A B G Gnd Vdd
+    M1 (G B_bar Gnd Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    M0 (G A_bar Gnd Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    P0 (G B_bar net21 Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    P1 (net21 A_bar Vdd Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    I1 (Gnd B B_bar Vdd) inverter
+    I0 (Gnd A A_bar Vdd) inverter
+ends generate
+// End of subcircuit definition.
+
+// Library name: Project_416
+// Cell name: propagate
+// View name: schematic
+subckt propagate A B Gnd P Vdd
+    N1 (net22 B_bar Gnd Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N0 (P A_bar net22 Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    P1 (P B_bar Vdd Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    P0 (P A_bar Vdd Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    I1 (Gnd B B_bar Vdd) inverter
+    I0 (Gnd A A_bar Vdd) inverter
+ends propagate
+// End of subcircuit definition.
+
+// Library name: Project_416
+// Cell name: setup
+// View name: schematic
+subckt setup A B G Gnd P Vdd
+    I0 (A B G Gnd Vdd) generate
+    I1 (A B Gnd P Vdd) propagate
+ends setup
+// End of subcircuit definition.
+
+// Library name: Project_416
+// Cell name: CBA_4bit
+// View name: schematic
+I3 (Co_0 Cin G0 0 P0 Sum0 Vdd) full_adder
+I2 (Co_1 Co_0 G1 0 P1 Sum1 Vdd) full_adder
+I1 (Co_2 Co_1 G2 0 P2 Sum2 Vdd) full_adder
+I0 (Co_3 Co_2 G3 0 P3 Sum3 Vdd) full_adder
+I7 (A0 B0 G0 0 P0 Vdd) setup
+I6 (A1 B1 G1 0 P1 Vdd) setup
+I5 (A2 B2 G2 0 P2 Vdd) setup
+I4 (A3 B3 G3 0 P3 Vdd) setup
+C3 (Sum0 0) capacitor c=5f m=1
+C2 (Sum1 0) capacitor c=5f m=1
+C1 (Sum2 0) capacitor c=5f m=1
+C0 (Sum3 0) capacitor c=5f m=1
+V0 (Vdd 0) vsource type=dc dc=1.8
+C4 (Co_3 0) capacitor c=5f m=1
+V9 (Cin 0) vsource type=pulse val0=0 val1=0
+V8 (B0 0) vsource type=pulse val0=0 val1=0
+V7 (B1 0) vsource type=pulse val0=0 val1=0
+V6 (B2 0) vsource type=pulse val0=0 val1=0
+V5 (B3 0) vsource type=pulse val0=0 val1=0
+V4 (A3 0) vsource type=pulse val0=0 val1=1.8 period=8u rise=40n fall=40n width=4u
+V3 (A2 0) vsource type=pulse val0=0 val1=1.8 period=6u rise=40n fall=40n width=3u
+V2 (A1 0) vsource type=pulse val0=0 val1=1.8 period=4u rise=40n fall=40n width=2u
+V1 (A0 0) vsource type=pulse val0=0 val1=1.8 period=2u rise=40n fall=40n width=1u
+simulatorOptions options reltol=1e-3 vabstol=1e-6 iabstol=1e-12 temp=27 \
+    tnom=27 scalem=1.0 scale=1.0 gmin=1e-12 rforce=1 maxnotes=5 maxwarns=5 \
+    digits=5 cols=80 pivrel=1e-3 sensfile="../psf/sens.output" \
+    checklimitdest=psf 
+tran tran stop=10u write="spectre.ic" writefinal="spectre.fc" \
+    annotate=status maxiters=5 
+finalTimeOP info what=oppoint where=rawfile
+modelParameter info what=models where=rawfile
+element info what=inst where=rawfile
+outputParameter info what=output where=rawfile
+designParamVals info what=parameters where=rawfile
+primitives info what=primitives where=rawfile
+subckts info what=subckts  where=rawfile
+saveOptions options save=allpub

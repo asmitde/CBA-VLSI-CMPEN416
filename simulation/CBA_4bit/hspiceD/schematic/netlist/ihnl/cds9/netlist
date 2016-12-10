@@ -1,0 +1,11 @@
+mp3 net14 co3 vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp2 co3mux_bar bypass net14 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp1 co3mux_bar bypass_bar net15 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp0 net15 cin vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mn3 net13 co3 gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn2 co3mux_bar bypass_bar net13 gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn1 net16 cin gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn0 co3mux_bar bypass net16 gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+xi0 gnd bypass bypass_bar vdd inverter
+.ends bypass_mux
+** End of subcircuit definition.

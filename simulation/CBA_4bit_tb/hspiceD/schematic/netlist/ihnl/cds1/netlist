@@ -1,0 +1,11 @@
+mn3 out in1 net22 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn2 net22 s gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn1 out in0 net23 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn0 net23 s__ gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mp3 net16 in0 vdd vdd tsmc20P L=200e-9 W=800e-9 AD=400e-15 AS=400e-15 PD=2.6e-6 PS=2.6e-6 M=1
+mp2 net16 s__ vdd vdd tsmc20P L=200e-9 W=800e-9 AD=400e-15 AS=400e-15 PD=2.6e-6 PS=2.6e-6 M=1
+mp1 out s net16 vdd tsmc20P L=200e-9 W=800e-9 AD=400e-15 AS=400e-15 PD=2.6e-6 PS=2.6e-6 M=1
+mp0 out in1 net16 vdd tsmc20P L=200e-9 W=800e-9 AD=400e-15 AS=400e-15 PD=2.6e-6 PS=2.6e-6 M=1
+xi0 gnd s s__ vdd inverter
+.ends invMUX2
+** End of subcircuit definition.

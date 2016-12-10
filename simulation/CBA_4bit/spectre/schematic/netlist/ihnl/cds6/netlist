@@ -1,0 +1,4 @@
+    I0 (A B G Gnd Vdd) generate
+    I1 (A B Gnd P Vdd) propagate
+ends setup
+// End of subcircuit definition.

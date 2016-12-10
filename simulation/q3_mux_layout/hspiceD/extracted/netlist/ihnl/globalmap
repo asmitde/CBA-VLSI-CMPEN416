@@ -1,0 +1,8 @@
+CADENCE IHNL01070
+$model
+Asst_6/q3_mux_layout/extracted q3_mux_layout
+$endmodel
+$net
+$endnet
+$param
+$endparam

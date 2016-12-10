@@ -1,0 +1,183 @@
+** Generated for: hspiceD
+** Generated on: Nov 23 23:23:29 2016
+** Design library name: Project_416
+** Design cell name: CBA_4bit_tb
+** Design view name: schematic
+
+
+.TRAN 10e-9 3e-6 START=0.0
+
+.OP
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20N.m"
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20P.m"
+
+** Library name: Project_416
+** Cell name: inverter
+** View name: schematic
+.subckt inverter gnd in in_bar vdd
+mp0 in_bar in vdd vdd tsmc20P L=200e-9 W=650e-9 AD=325e-15 AS=325e-15 PD=2.3e-6 PS=2.3e-6 M=1
+mn0 in_bar in gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+.ends inverter
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: invMUX2
+** View name: schematic
+.subckt invMUX2 in0 in1 out s vdd gnd
+mn3 out in1 net22 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn2 net22 s gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn1 out in0 net23 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn0 net23 s__ gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mp3 net16 in0 vdd vdd tsmc20P L=200e-9 W=800e-9 AD=400e-15 AS=400e-15 PD=2.6e-6 PS=2.6e-6 M=1
+mp2 net16 s__ vdd vdd tsmc20P L=200e-9 W=800e-9 AD=400e-15 AS=400e-15 PD=2.6e-6 PS=2.6e-6 M=1
+mp1 out s net16 vdd tsmc20P L=200e-9 W=800e-9 AD=400e-15 AS=400e-15 PD=2.6e-6 PS=2.6e-6 M=1
+mp0 out in1 net16 vdd tsmc20P L=200e-9 W=800e-9 AD=400e-15 AS=400e-15 PD=2.6e-6 PS=2.6e-6 M=1
+xi0 gnd s s__ vdd inverter
+.ends invMUX2
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: XOR2
+** View name: schematic
+.subckt XOR2 a axorb b vdd gnd
+xi0 gnd a a__ vdd inverter
+xi1 a__ a axorb b vdd gnd invMUX2
+.ends XOR2
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: Sum
+** View name: schematic
+.subckt Sum cin p sum vdd gnd
+xi2 p sum cin vdd gnd XOR2
+.ends Sum
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: carry
+** View name: schematic
+.subckt carry carry cin g gnd p vdd
+mp2 carry g_bar vdd vdd tsmc20P L=200e-9 W=750e-9 AD=375e-15 AS=375e-15 PD=2.5e-6 PS=2.5e-6 M=1
+mp1 carry p_bar net29 vdd tsmc20P L=200e-9 W=750e-9 AD=375e-15 AS=375e-15 PD=2.5e-6 PS=2.5e-6 M=1
+mp0 net29 cin_bar vdd vdd tsmc20P L=200e-9 W=750e-9 AD=375e-15 AS=375e-15 PD=2.5e-6 PS=2.5e-6 M=1
+mn2 net15 g_bar gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn1 carry cin_bar net15 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn0 carry p_bar net15 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+xi2 gnd cin cin_bar vdd inverter
+xi1 gnd g g_bar vdd inverter
+xi0 gnd p p_bar vdd inverter
+.ends carry
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: full_adder
+** View name: schematic
+.subckt full_adder carry cin g gnd p sum vdd
+xi0 cin p sum vdd gnd Sum
+xi1 carry cin g gnd p vdd carry
+.ends full_adder
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: NAND2
+** View name: schematic
+.subckt NAND2 a anandb b vdd gnd
+mn1 anandb a net14 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn0 net14 b gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mp1 anandb b vdd vdd tsmc20P L=200e-9 W=900e-9 AD=450e-15 AS=450e-15 PD=2.8e-6 PS=2.8e-6 M=1
+mp0 anandb a vdd vdd tsmc20P L=200e-9 W=900e-9 AD=450e-15 AS=450e-15 PD=2.8e-6 PS=2.8e-6 M=1
+.ends NAND2
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: generate
+** View name: schematic
+.subckt generate a b g vdd gnd
+xi3 a net6 b vdd gnd NAND2
+xi1 gnd net6 g vdd inverter
+.ends generate
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: propagate
+** View name: schematic
+.subckt propagate a b p vdd gnd
+xi2 a p b vdd gnd XOR2
+.ends propagate
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: setup
+** View name: schematic
+.subckt setup a b g gnd p vdd
+xi0 a b g vdd gnd generate
+xi1 a b p vdd gnd propagate
+.ends setup
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: NOR2
+** View name: schematic
+.subckt NOR2 a anorb b vdd gnd
+m1 anorb b gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+m0 anorb a gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mp1 net45 a vdd vdd tsmc20P L=200e-9 W=1.3e-6 AD=650e-15 AS=650e-15 PD=3.6e-6 PS=3.6e-6 M=1
+mp0 anorb b net45 vdd tsmc20P L=200e-9 W=1.3e-6 AD=650e-15 AS=650e-15 PD=3.6e-6 PS=3.6e-6 M=1
+.ends NOR2
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: bypass
+** View name: schematic
+.subckt bypass prop0 prop1 prop2 prop3 vdd bypass gnd
+xi5 prop2 net8 prop3 vdd gnd NAND2
+xi4 prop0 net9 prop1 vdd gnd NAND2
+xi6 net9 bypass net8 vdd gnd NOR2
+.ends bypass
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: CBA_4bit
+** View name: schematic
+.subckt CBA_4bit a0 a1 a2 a3 b0 b1 b2 b3 cin co3_mux gnd sum0 sum1 sum2 sum3 vdd
+xi3 co_0 cin g0 gnd p0 sum0 vdd full_adder
+xi2 co_1 co_0 g1 gnd p1 sum1 vdd full_adder
+xi1 co_2 co_1 g2 gnd p2 sum2 vdd full_adder
+xi0 co_3 co_2 g3 gnd p3 sum3 vdd full_adder
+xi7 a0 b0 g0 gnd p0 vdd setup
+xi6 a1 b1 g1 gnd p1 vdd setup
+xi5 a2 b2 g2 gnd p2 vdd setup
+xi4 a3 b3 g3 gnd p3 vdd setup
+xbypass co_3 cin co3mux_bar bypass_signal vdd gnd invMUX2
+xi29 gnd co3mux_bar co3_mux vdd inverter
+xi24 p0 p1 p2 p3 vdd bypass_signal gnd bypass
+.ends CBA_4bit
+** End of subcircuit definition.
+
+** Library name: Project_416
+** Cell name: CBA_4bit_tb
+** View name: schematic
+v14 b1 0 PULSE 1.8 1.8 0
+v12 b0 0 PULSE 1.8 1.8 0
+v19 cin 0 PULSE 0 0 0
+v13 a1 0 PULSE 0 0 0
+v10 a0 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v17 a3 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v15 a2 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v18 b3 0 PULSE 0 0 0
+v16 b2 0 PULSE 0 0 0
+c9 sum3 0 5e-15 M=1
+c8 sum2 0 5e-15 M=1
+c7 sum1 0 5e-15 M=1
+c6 sum0 0 5e-15 M=1
+c10 co3_mux 0 5e-15 M=1
+v11 net13 0 DC=1.8
+xi30 a0 a1 a2 a3 b0 b1 b2 b3 cin co3_mux 0 sum0 sum1 sum2 sum3 net13 CBA_4bit
+.END

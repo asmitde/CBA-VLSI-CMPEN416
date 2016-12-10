@@ -1,0 +1,5 @@
+
+** Library name: Project_416
+** Cell name: invMUX2
+** View name: schematic
+.subckt invMUX2 in0 in1 out s vdd gnd

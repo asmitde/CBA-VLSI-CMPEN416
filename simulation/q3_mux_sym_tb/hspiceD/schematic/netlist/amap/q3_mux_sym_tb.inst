@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"I0v" "xi0v"
+"V1v" "v1v"
+"I0n" "q3_mux_schematic"
+"V0v" "v0v"
+"C0v" "c0v"
+"V1n V0n" "NCSU_Analog_Parts_vdc_hspiceD"
+"V2v" "v2v"
+"C0n" "NCSU_Analog_Parts_cap_hspiceD"
+"V2n" "NCSU_Analog_Parts_vpulse_hspiceD"

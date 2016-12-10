@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+Project_416/NOR2_tb/schematic NOR2_tb
+Project_416/NOR2/schematic NOR2
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+beta beta
+$endparam

@@ -1,0 +1,4 @@
+    I0 (Cin Gnd P Sum Vdd) Sum
+    I1 (Carry Cin G Gnd P Vdd) carry
+ends full_adder
+// End of subcircuit definition.

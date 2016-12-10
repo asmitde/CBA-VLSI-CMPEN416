@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  hierDelim "^"
+ )
+( net
+( "Vdd" "vdd" )
+( "gnd!" "0" )
+ )
+( inst
+( "V0" "v0" )
+( "V2" "v2" )
+( "I3" "xi3" )
+( "C0" "c0" )
+( "I1" "xi1" )
+( "V1" "v1" )
+ )
+( model
+ )
+( term
+ )
+( param
+ )
+ )

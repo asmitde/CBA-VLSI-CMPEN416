@@ -1,0 +1,10 @@
+CADENCE IHNL01070
+$model
+Asst_5/Asst5_Q2/schematic Asst5_Q2
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+beta beta
+$endparam

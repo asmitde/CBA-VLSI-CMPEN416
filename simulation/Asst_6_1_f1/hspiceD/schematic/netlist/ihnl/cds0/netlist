@@ -1,0 +1,21 @@
+
+** Library name: Asst_6
+** Cell name: Asst_6_1_f1
+** View name: schematic
+mn4 out c net6 0 tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn3 net6 e 0 0 tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn2 out a net11 0 tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn1 net6 d 0 0 tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn0 net11 b 0 0 tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mp4 net9 e vdd vdd tsmc20P L=200e-9 W='2.5*wp' AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mp3 net3 d net9 vdd tsmc20P L=200e-9 W='2.5*wp' AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mp2 net3 c vdd vdd tsmc20P L=200e-9 W='2.5*wp' AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mp1 net10 b net3 vdd tsmc20P L=200e-9 W='2.5*wp' AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mp0 out a net10 vdd tsmc20P L=200e-9 W='2.5*wp' AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+v9 e 0 DC=1.8
+v8 d 0 DC=1.8
+v7 c 0 DC=1.8
+v6 b 0 DC=1.8
+v0 vdd 0 DC=1.8
+c0 out 0 5e-15 M=1
+v1 a 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6

@@ -1,0 +1,5 @@
+
+** Library name: Project_416
+** Cell name: NOR2
+** View name: schematic
+.subckt NOR2 a anorb b vdd gnd

@@ -1,0 +1,11 @@
+mp2 carry g_bar vdd vdd tsmc20P L=200e-9 W=750e-9 AD=375e-15 AS=375e-15 PD=2.5e-6 PS=2.5e-6 M=1
+mp1 carry p_bar net29 vdd tsmc20P L=200e-9 W=750e-9 AD=375e-15 AS=375e-15 PD=2.5e-6 PS=2.5e-6 M=1
+mp0 net29 cin_bar vdd vdd tsmc20P L=200e-9 W=750e-9 AD=375e-15 AS=375e-15 PD=2.5e-6 PS=2.5e-6 M=1
+mn2 net15 g_bar gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn1 carry cin_bar net15 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn0 carry p_bar net15 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+xi2 gnd cin cin_bar vdd inverter
+xi1 gnd g g_bar vdd inverter
+xi0 gnd p p_bar vdd inverter
+.ends carry
+** End of subcircuit definition.

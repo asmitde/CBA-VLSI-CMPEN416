@@ -1,0 +1,4 @@
+    P0 (In_bar In Vdd Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    N0 (In_bar In Gnd Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+ends inverter
+// End of subcircuit definition.

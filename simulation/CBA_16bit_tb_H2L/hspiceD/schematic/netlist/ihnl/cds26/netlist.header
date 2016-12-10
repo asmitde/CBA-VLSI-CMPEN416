@@ -1,0 +1,5 @@
+
+** Library name: Project_416
+** Cell name: generate
+** View name: schematic
+.subckt generate a b g vdd gnd

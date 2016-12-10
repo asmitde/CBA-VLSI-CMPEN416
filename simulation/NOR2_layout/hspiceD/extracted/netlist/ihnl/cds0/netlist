@@ -1,0 +1,8 @@
+
+** Library name: Project_416
+** Cell name: NOR2_layout
+** View name: extracted
+m0 anorb b n6 vdd tsmc20P L=200e-9 W=1.3e-6 AD=650e-15 AS=390e-15 PD=2.3e-6 PS=600e-9 M=1
+m1 n6 a vdd vdd tsmc20P L=200e-9 W=1.3e-6 AD=390e-15 AS=650e-15 PD=600e-9 PS=2.3e-6 M=1
+m2 gnd b anorb gnd tsmc20N L=200e-9 W=300e-9 AD=190e-15 AS=110e-15 PD=1.5e-6 PS=700e-9 M=1
+m3 anorb a gnd gnd tsmc20N L=200e-9 W=300e-9 AD=110e-15 AS=190e-15 PD=700e-9 PS=1.5e-6 M=1

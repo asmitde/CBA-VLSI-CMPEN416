@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Project_416\" \"invMUX2_tb\" \"schematic\" \"\")"
+"simulator" "hspiceD"
+"temperature" "25.0"
+"host" ""
+"date" "Nov 23 21:40:00 2016"
+"title" ""
+"analysisList" "()"
+END

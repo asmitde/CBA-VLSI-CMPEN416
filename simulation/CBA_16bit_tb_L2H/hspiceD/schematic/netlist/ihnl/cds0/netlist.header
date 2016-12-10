@@ -1,0 +1,5 @@
+
+** Library name: Project_416
+** Cell name: NAND2
+** View name: schematic
+.subckt NAND2 a anandb b vdd gnd

@@ -1,0 +1,5 @@
+
+// Library name: Project_416
+// Cell name: propagate
+// View name: schematic
+subckt propagate A B Gnd P Vdd

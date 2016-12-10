@@ -1,0 +1,16 @@
+m0 out b vdd vdd tsmc20P L=200e-9 W=1e-6 AD=500e-15 AS=500e-15 PD=2e-6 PS=2e-6 M=1
+m1 vdd a out vdd tsmc20P L=200e-9 W=1e-6 AD=500e-15 AS=500e-15 PD=2e-6 PS=2e-6 M=1
+c2 b gnd 110.58e-18 M=1
+c3 a gnd 69.84e-18 M=1
+c4 gnd n6 44.84e-18 M=1
+c5 b gnd 60.68e-18 M=1
+c6 a gnd 71.285e-18 M=1
+c7 vdd gnd 402.14e-18 M=1
+c8 out gnd 2.06436e-15 M=1
+c9 b out 50.84e-18 M=1
+c10 a out 54.8e-18 M=1
+c11 vdd out 276.8e-18 M=1
+m12 gnd b n6 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=1.6e-6 PS=1.6e-6 M=1
+m13 n6 a out gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=1.6e-6 PS=1.6e-6 M=1
+.ends NAND_schematic_extracted
+** End of subcircuit definition.

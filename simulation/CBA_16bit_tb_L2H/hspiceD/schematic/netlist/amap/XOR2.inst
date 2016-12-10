@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"I1v" "xi1v"
+"I0v" "xi0v"
+"I1n" "invMUX2"
+"I0n" "inverter"
+"Vddv" "(FUNCTION (plus (root \"I0/Vdd\") (root \"I1/Vdd\")))v"
+"gndv" "(FUNCTION (plus (root \"I0/Gnd\") (root \"I1/gnd\")))v"
+"AxorBv" "(FUNCTION (plus (root \"I1/Out\")))v"
+"Av" "(FUNCTION (plus (root \"I0/In\") (root \"I1/In1\")))v"
+"Bv" "(FUNCTION (plus (root \"I1/S\")))v"

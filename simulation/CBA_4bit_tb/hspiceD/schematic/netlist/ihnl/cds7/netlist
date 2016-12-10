@@ -1,0 +1,4 @@
+xi3 a net6 b vdd gnd NAND2
+xi1 gnd net6 g vdd inverter
+.ends generate
+** End of subcircuit definition.

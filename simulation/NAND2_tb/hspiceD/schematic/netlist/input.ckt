@@ -1,0 +1,41 @@
+** Generated for: hspiceD
+** Generated on: Nov 23 21:13:57 2016
+** Design library name: Assignment2
+** Design cell name: NAND2_tb
+** Design view name: schematic
+.PARAM beta=5
+
+
+.TRAN 10e-9 3e-6 START=0.0
+
+.OP
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20N.m"
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20P.m"
+
+** Library name: Project_416
+** Cell name: NAND2
+** View name: schematic
+.subckt NAND2 a anandb b vdd gnd
+mn1 anandb a net14 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn0 net14 b gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mp1 anandb b vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp0 anandb a vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+.ends NAND2
+** End of subcircuit definition.
+
+** Library name: Assignment2
+** Cell name: NAND2_tb
+** View name: schematic
+xi0 net3 net5 net4 net2 0 NAND2
+v1 net4 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v0 net3 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v2 net2 0 DC=1.8
+c0 net5 0 5e-15 M=1
+.END

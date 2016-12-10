@@ -1,0 +1,12 @@
+mn2 f s_bar net24 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn0 f s net26 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn4 s_bar s gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn3 net24 b gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mn1 net26 a gnd gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=2.2e-6 PS=2.2e-6 M=1
+mp3 net25 a vdd vdd tsmc20P L=200e-9 W='beta*600e-9' AD='((beta*600e-9)*2.5)*200e-9' AS='((beta*600e-9)*2.5)*200e-9' PD='(2*beta)*600e-9+1e-6' PS='(2*beta)*600e-9+1e-6' M=1
+mp0 net23 b vdd vdd tsmc20P L=200e-9 W='beta*600e-9' AD='((beta*600e-9)*2.5)*200e-9' AS='((beta*600e-9)*2.5)*200e-9' PD='(2*beta)*600e-9+1e-6' PS='(2*beta)*600e-9+1e-6' M=1
+mp2 f s_bar net25 vdd tsmc20P L=200e-9 W='beta*600e-9' AD='((beta*600e-9)*2.5)*200e-9' AS='((beta*600e-9)*2.5)*200e-9' PD='(2*beta)*600e-9+1e-6' PS='(2*beta)*600e-9+1e-6' M=1
+mp1 f s net23 vdd tsmc20P L=200e-9 W='beta*600e-9' AD='((beta*600e-9)*2.5)*200e-9' AS='((beta*600e-9)*2.5)*200e-9' PD='(2*beta)*600e-9+1e-6' PS='(2*beta)*600e-9+1e-6' M=1
+mp4 s_bar s vdd vdd tsmc20P L=200e-9 W='beta*600e-9' AD='((beta*600e-9)*2.5)*200e-9' AS='((beta*600e-9)*2.5)*200e-9' PD='(2*beta)*600e-9+1e-6' PS='(2*beta)*600e-9+1e-6' M=1
+.ends q3_mux_schematic
+** End of subcircuit definition.

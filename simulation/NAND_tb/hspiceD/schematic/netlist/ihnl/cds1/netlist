@@ -1,0 +1,8 @@
+
+** Library name: assignment4
+** Cell name: NAND_tb
+** View name: schematic
+xi0 net3 vdd 0 net5 vdd NAND_schematic_extracted
+v0 vdd 0 DC=1.8
+c0 net5 0 5e-15 M=1
+v1 net3 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6

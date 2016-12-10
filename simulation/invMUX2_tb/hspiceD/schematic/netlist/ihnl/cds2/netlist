@@ -1,0 +1,10 @@
+
+** Library name: Project_416
+** Cell name: invMUX2_tb
+** View name: schematic
+xi0 in0 in1 out s net5 0 invMUX2
+v1 in1 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v0 in0 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v4 s 0 DC=0
+v3 net5 0 DC=1.8
+c0 out 0 5e-15 M=1

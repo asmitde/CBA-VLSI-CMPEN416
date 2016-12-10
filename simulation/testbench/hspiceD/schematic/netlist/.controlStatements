@@ -1,0 +1,10 @@
+
+
+.DC v1 0.0 1.8 100e-3
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2

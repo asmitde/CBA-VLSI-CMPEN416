@@ -1,0 +1,5 @@
+
+// Library name: Project_416
+// Cell name: inverter
+// View name: schematic
+subckt inverter Gnd In In_bar Vdd

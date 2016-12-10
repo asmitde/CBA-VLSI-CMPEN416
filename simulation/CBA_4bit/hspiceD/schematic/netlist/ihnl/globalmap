@@ -1,0 +1,19 @@
+CADENCE IHNL01070
+$model
+Project_416/inverter/schematic inverter
+Project_416/carry/schematic carry
+Project_416/Sum/schematic Sum
+Project_416/propagate/schematic propagate
+Project_416/bypass_mux/schematic bypass_mux
+Project_416/generate/schematic generate
+Project_416/full_adder/schematic full_adder
+Project_416/CBA_4bit/schematic CBA_4bit
+Project_416/setup/schematic setup
+Project_416/bypass/schematic bypass
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+beta beta
+$endparam

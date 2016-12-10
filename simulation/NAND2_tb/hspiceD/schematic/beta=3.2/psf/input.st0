@@ -1,0 +1,69 @@
+***** HSPICE -- H-2013.03 32-BIT (Feb 27 2013) RHEL32 ******
+ Input File: input.ckt
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   sms821               HOSTNAME: p218inst10.cse.psu.edu
+ lic: HOSTID: 1866da24a72f         PID:      8078
+ lic: Using FLEXlm license file:
+ lic: 1700@telperion
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 19-oct-2017/2016.06
+ lic: 1(in_use)/50(total) FLOATING license(s) on SERVER telperion
+ lic:
+ init: begin read circuit files,  cpu clock=  2.99E-01
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/ad
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/ad
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/behave
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/bjt
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/burr_brn
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/comlinear
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/dio
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/fet
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/lin_tech
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/pci
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/signet
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/ti
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/tline
+       option search = /home/software/synopsys-2013/hspice-H-2013.03/hs
+                         pice/parts/xilinx
+       option runlvl
+       option artist =     2.00
+       option ingold =     2.00
+       option parhier = local
+       option psf =     2.00
+ init: end read circuit files,  cpu clock=  3.04E-01 peak memory=       120 mb
+ init: begin check errors,  cpu clock=  3.04E-01
+ init: end check errors,  cpu clock=  3.08E-01 peak memory=       120 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  3.08E-01
+       establish matrix -- done,  cpu clock=  3.09E-01 peak memory=       120 mb
+       re-order matrix -- done,  cpu clock=  3.09E-01 peak memory=       120 mb
+ init: end setup matrix,  cpu clock=  3.09E-01 peak memory=       120 mb
+ dcop: begin dcop,  cpu clock=  3.09E-01
+ dcop: end dcop,  cpu clock=  3.23E-01 peak memory=       121 mb  tot_iter=      20
+ sweep: tran tran0    begin, stop_t=  3.00E-06 #sweeps= 301 cpu clock=  3.25E-01
+ tran: time= 3.5458E-07 tot_iter=     111 conv_iter=      32 cpu clock= 3.26E-01
+ tran: time= 6.5458E-07 tot_iter=     115 conv_iter=      34 cpu clock= 3.26E-01
+ tran: time= 9.5458E-07 tot_iter=     119 conv_iter=      36 cpu clock= 3.26E-01
+ tran: time= 1.2268E-06 tot_iter=     271 conv_iter=      78 cpu clock= 3.27E-01
+ tran: time= 1.6393E-06 tot_iter=     278 conv_iter=      81 cpu clock= 3.28E-01
+ tran: time= 1.9393E-06 tot_iter=     282 conv_iter=      83 cpu clock= 3.28E-01
+ tran: time= 2.1377E-06 tot_iter=     371 conv_iter=     109 cpu clock= 3.28E-01
+ tran: time= 2.4377E-06 tot_iter=     375 conv_iter=     111 cpu clock= 3.28E-01
+ tran: time= 2.7377E-06 tot_iter=     379 conv_iter=     113 cpu clock= 3.28E-01
+ tran: time= 3.0000E-06 tot_iter=     383 conv_iter=     115 cpu clock= 3.29E-01
+ sweep: tran tran0    end,  cpu clock=  3.29E-01 peak memory=       121 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

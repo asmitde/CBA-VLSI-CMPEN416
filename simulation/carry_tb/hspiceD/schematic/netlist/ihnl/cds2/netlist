@@ -1,0 +1,10 @@
+
+** Library name: Project_416
+** Cell name: carry_tb
+** View name: schematic
+xi0 net6 net3 net4 0 net5 net2 carry
+v2 net3 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v1 net4 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v0 net5 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v3 net2 0 DC=1.8
+c0 net6 0 5e-15 M=1

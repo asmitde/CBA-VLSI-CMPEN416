@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"I0v" "xi0v"
+"C0v" "c0v"
+"I0n" "inverter"
+"V0v" "v0v"
+"C0n" "NCSU_Analog_Parts_cap_hspiceD"
+"V1v" "v1v"
+"V0n" "NCSU_Analog_Parts_vdc_hspiceD"
+"V1n" "NCSU_Analog_Parts_vpulse_hspiceD"

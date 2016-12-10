@@ -1,0 +1,5 @@
+
+** Library name: assignment4
+** Cell name: NAND_schematic
+** View name: schematic
+.subckt NAND_schematic a b gnd out vdd

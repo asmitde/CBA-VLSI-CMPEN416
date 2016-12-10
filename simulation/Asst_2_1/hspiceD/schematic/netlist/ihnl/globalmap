@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+Asst_2/Asst_2_1/schematic Asst_2_1
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+vgs vgs
+vds vds
+$endparam

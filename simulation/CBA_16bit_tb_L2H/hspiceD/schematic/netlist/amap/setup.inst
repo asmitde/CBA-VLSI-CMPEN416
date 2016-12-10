@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"I1v" "xi1v"
+"I0v" "xi0v"
+"I1n" "propagate"
+"I0n" "generate"
+"Vddv" "(FUNCTION (plus (root \"I1/Vdd\") (root \"I0/Vdd\")))v"
+"Gndv" "(FUNCTION (plus (root \"I1/gnd\") (root \"I0/gnd\")))v"
+"Av" "(FUNCTION (plus (root \"I1/A\") (root \"I0/A\")))v"
+"Bv" "(FUNCTION (plus (root \"I1/B\") (root \"I0/B\")))v"
+"Gv" "(FUNCTION (plus (root \"I0/G\")))v"
+"Pv" "(FUNCTION (plus (root \"I1/P\")))v"

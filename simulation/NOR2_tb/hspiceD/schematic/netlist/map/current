@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "NOR2_tb"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  globalList "gnd!"
+  hierDelim "^"
+  netlistDir "/home/grads/sms821/EE416/simulation/NOR2_tb/hspiceD/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "Project_416/NOR2_tb/schematic" "NOR2_tb" )
+( "Project_416/NOR2/schematic" "NOR2" )
+ )
+( term
+ )
+( param
+ )
+( "NOR2_tb" "ihnl/cds1/map" )
+( "NOR2" "ihnl/cds0/map" )
+ )

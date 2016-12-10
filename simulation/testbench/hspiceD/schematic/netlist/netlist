@@ -1,0 +1,16 @@
+
+** Library name: Assignment2
+** Cell name: symbol
+** View name: schematic
+.subckt symbol gnd in out vdd
+mn1 out in gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mp0 out in vdd vdd tsmc20P L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+.ends symbol
+** End of subcircuit definition.
+
+** Library name: Assignment2
+** Cell name: testbench
+** View name: schematic
+xi0 0 net5 net4 net2 symbol
+v1 net5 0
+v0 net2 0 DC=1.8

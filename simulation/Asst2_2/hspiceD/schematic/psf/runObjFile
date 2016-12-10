@@ -1,0 +1,111 @@
+HEADER
+"PSFversion" "1.00"
+"Run Generator" "drlRun rev. 1.0"
+"Run Time Stamp" "Sep 15 00:58:36 2016"
+"date" "Sep 15 00:58:36 2016"
+"simulator" "hspiceD"
+"netlistDir" "../netlist"
+TYPE
+"runObject" STRUCT(
+"logName" ARRAY( * ) STRING *
+"parent" STRING *
+"sweepVariable" ARRAY( * ) STRING *
+) PROP( "key" "runObject" )
+VALUE
+"Root" "runObject" (
+("")
+""
+("vgs")
+)
+"vgs=-1.8/psf" "runObject" (
+(
+"../vgs=-1.8/psf/logFile"
+"../vgs=-1.8/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../vgs=-1.8"
+ "vgs" -1.800000e+00
+)
+
+"vgs=-1.5/psf" "runObject" (
+(
+"../vgs=-1.5/psf/logFile"
+"../vgs=-1.5/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../vgs=-1.5"
+ "vgs" -1.500000e+00
+)
+
+"vgs=-1.2/psf" "runObject" (
+(
+"../vgs=-1.2/psf/logFile"
+"../vgs=-1.2/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../vgs=-1.2"
+ "vgs" -1.200000e+00
+)
+
+"vgs=-0.9/psf" "runObject" (
+(
+"../vgs=-0.9/psf/logFile"
+"../vgs=-0.9/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../vgs=-0.9"
+ "vgs" -9.000000e-01
+)
+
+"vgs=-0.6/psf" "runObject" (
+(
+"../vgs=-0.6/psf/logFile"
+"../vgs=-0.6/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../vgs=-0.6"
+ "vgs" -6.000000e-01
+)
+
+"vgs=-0.3/psf" "runObject" (
+(
+"../vgs=-0.3/psf/logFile"
+"../vgs=-0.3/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../vgs=-0.3"
+ "vgs" -3.000000e-01
+)
+
+"vgs=0/psf" "runObject" (
+(
+"../vgs=0/psf/logFile"
+"../vgs=0/psf/artistLogFile"
+)
+"Root"
+()
+) PROP(
+"netlistDir" "../netlist"
+"dataDir" "../vgs=0"
+ "vgs" 0.000000e+00
+)
+
+END

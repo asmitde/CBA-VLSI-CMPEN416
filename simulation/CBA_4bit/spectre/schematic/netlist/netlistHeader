@@ -1,0 +1,7 @@
+// Generated for: spectre
+// Generated on: Nov  6 03:56:03 2016
+// Design library name: Project_416
+// Design cell name: CBA_4bit
+// Design view name: schematic
+simulator lang=spectre
+global 0

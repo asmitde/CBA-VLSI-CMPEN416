@@ -1,0 +1,8 @@
+HEADER
+"PSFversion" "1.00"
+"I3n I2n I1n I0n" "full_adder"
+"I7n I6n I5n I4n" "setup"
+"C3n C2n C1n C0n" "NCSU_Analog_Parts_cap_spectre"
+"V0n" "NCSU_Analog_Parts_vdc_spectre"
+"C4n" "NCSU_Analog_Parts_cap_spectre"
+"V9n V8n V7n V6n V5n V4n V3n V2n V1n" "NCSU_Analog_Parts_vpulse_spectre"

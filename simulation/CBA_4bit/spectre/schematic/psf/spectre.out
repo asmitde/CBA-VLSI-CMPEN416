@@ -1,0 +1,88 @@
+
+Cadence (R) Virtuoso (R) Spectre (R) Circuit Simulator
+Version 14.1.0.255.isr2 64bit -- 21 Nov 2014
+Copyright (C) 1989-2014 Cadence Design Systems, Inc. All rights reserved worldwide. Cadence, Virtuoso and Spectre are registered trademarks of Cadence Design Systems, Inc. All others are the property of their respective holders.
+
+Includes RSA BSAFE(R) Cryptographic or Security Protocol Software from RSA Security, Inc.
+
+User: sms821   Host: p218inst10.cse.psu.edu   HostID: CB821D10   PID: 6394
+Memory  available: 12.0696 GB  physical: 16.6424 GB
+CPU Type: Intel(R) Xeon(R) CPU E5-1620 v3 @ 3.50GHz
+          Processor PhysicalID CoreID Frequency Load
+              0         0        0     1200.0     0.3
+              1         0        1     1200.0     0.2
+              2         0        2     1200.0     0.1
+              3         0        3     1200.0     0.1
+              4         0        0     1200.0     0.1
+              5         0        1     1200.0     0.1
+              6         0        2     1200.0     0.2
+              7         0        3     1200.0     0.1
+
+
+Simulating `input.scs' on p218inst10.cse.psu.edu at 3:56:10 AM, Sun Nov 6, 2016 (process id: 6394).
+Current working directory: /home/grads/sms821/EE416/simulation/CBA_4bit/spectre/schematic/netlist
+Command line:
+    /home/software/cadence-2014/MMSIM141/tools.lnx86/bin/spectre -64  \
+        input.scs +escchars +log ../psf/spectre.out +inter=mpsc  \
+        +mpssession=spectre1_2304_1 -format psfxl -raw ../psf  \
+        +lqtimeout 900 -maxw 5 -maxn 5
+spectre pid = 6394
+
+Loading /home/software/cadence-2014/MMSIM141/tools.lnx86/cmi/lib/64bit/5.0/libinfineon_sh.so ...
+Loading /home/software/cadence-2014/MMSIM141/tools.lnx86/cmi/lib/64bit/5.0/libphilips_o_sh.so ...
+Loading /home/software/cadence-2014/MMSIM141/tools.lnx86/cmi/lib/64bit/5.0/libphilips_sh.so ...
+Loading /home/software/cadence-2014/MMSIM141/tools.lnx86/cmi/lib/64bit/5.0/libsparam_sh.so ...
+Loading /home/software/cadence-2014/MMSIM141/tools.lnx86/cmi/lib/64bit/5.0/libstmodels_sh.so ...
+Reading file:  /home/grads/sms821/EE416/simulation/CBA_4bit/spectre/schematic/netlist/input.scs
+Reading file:  /home/software/cadence-2014/MMSIM141/tools.lnx86/spectre/etc/configs/spectre.cfg
+Time for NDB Parsing: CPU = 117.982 ms, elapsed = 3.94189 s.
+Time accumulated: CPU = 189.97 ms, elapsed = 3.9419 s.
+Peak resident memory used = 39.1 Mbytes.
+
+
+Error found by spectre in `Sum', during circuit read-in.
+    ERROR (SFE-23): "input.scs" 23: The instance `P3' is referencing an undefined model or subcircuit, `tsmc20P'. Either include the file containing the definition of `tsmc20P', or define `tsmc20P' before running the simulation.
+    ERROR (SFE-23): "input.scs" 24: The instance `P2' is referencing an undefined model or subcircuit, `tsmc20P'. Either include the file containing the definition of `tsmc20P', or define `tsmc20P' before running the simulation.
+    ERROR (SFE-23): "input.scs" 25: The instance `P1' is referencing an undefined model or subcircuit, `tsmc20P'. Either include the file containing the definition of `tsmc20P', or define `tsmc20P' before running the simulation.
+    ERROR (SFE-23): "input.scs" 26: The instance `P0' is referencing an undefined model or subcircuit, `tsmc20P'. Either include the file containing the definition of `tsmc20P', or define `tsmc20P' before running the simulation.
+    ERROR (SFE-23): "input.scs" 27: The instance `N3' is referencing an undefined model or subcircuit, `tsmc20N'. Either include the file containing the definition of `tsmc20N', or define `tsmc20N' before running the simulation.
+    ERROR (SFE-23): "input.scs" 28: The instance `N2' is referencing an undefined model or subcircuit, `tsmc20N'. Either include the file containing the definition of `tsmc20N', or define `tsmc20N' before running the simulation.
+    ERROR (SFE-23): "input.scs" 29: The instance `N1' is referencing an undefined model or subcircuit, `tsmc20N'. Either include the file containing the definition of `tsmc20N', or define `tsmc20N' before running the simulation.
+    ERROR (SFE-23): "input.scs" 30: The instance `N0' is referencing an undefined model or subcircuit, `tsmc20N'. Either include the file containing the definition of `tsmc20N', or define `tsmc20N' before running the simulation.
+Error found by spectre in `inverter', during circuit read-in.
+    ERROR (SFE-23): "input.scs" 14: The instance `P0' is referencing an undefined model or subcircuit, `tsmc20P'. Either include the file containing the definition of `tsmc20P', or define `tsmc20P' before running the simulation.
+    ERROR (SFE-23): "input.scs" 15: The instance `N0' is referencing an undefined model or subcircuit, `tsmc20N'. Either include the file containing the definition of `tsmc20N', or define `tsmc20N' before running the simulation.
+Error found by spectre in `carry', during circuit read-in.
+    ERROR (SFE-23): "input.scs" 40: The instance `P2' is referencing an undefined model or subcircuit, `tsmc20P'. Either include the file containing the definition of `tsmc20P', or define `tsmc20P' before running the simulation.
+    ERROR (SFE-23): "input.scs" 41: The instance `P1' is referencing an undefined model or subcircuit, `tsmc20P'. Either include the file containing the definition of `tsmc20P', or define `tsmc20P' before running the simulation.
+    ERROR (SFE-23): "input.scs" 42: The instance `P0' is referencing an undefined model or subcircuit, `tsmc20P'. Either include the file containing the definition of `tsmc20P', or define `tsmc20P' before running the simulation.
+    ERROR (SFE-23): "input.scs" 43: The instance `N2' is referencing an undefined model or subcircuit, `tsmc20N'. Either include the file containing the definition of `tsmc20N', or define `tsmc20N' before running the simulation.
+    ERROR (SFE-23): "input.scs" 44: The instance `N1' is referencing an undefined model or subcircuit, `tsmc20N'. Either include the file containing the definition of `tsmc20N', or define `tsmc20N' before running the simulation.
+    ERROR (SFE-23): "input.scs" 45: The instance `N0' is referencing an undefined model or subcircuit, `tsmc20N'. Either include the file containing the definition of `tsmc20N', or define `tsmc20N' before running the simulation.
+Error found by spectre in `generate', during circuit read-in.
+    ERROR (SFE-23): "input.scs" 65: The instance `M1' is referencing an undefined model or subcircuit, `tsmc20N'. Either include the file containing the definition of `tsmc20N', or define `tsmc20N' before running the simulation.
+    ERROR (SFE-23): "input.scs" 66: The instance `M0' is referencing an undefined model or subcircuit, `tsmc20N'. Either include the file containing the definition of `tsmc20N', or define `tsmc20N' before running the simulation.
+    ERROR (SFE-23): "input.scs" 67: The instance `P0' is referencing an undefined model or subcircuit, `tsmc20P'. Either include the file containing the definition of `tsmc20P', or define `tsmc20P' before running the simulation.
+    ERROR (SFE-23): "input.scs" 68: The instance `P1' is referencing an undefined model or subcircuit, `tsmc20P'. Either include the file containing the definition of `tsmc20P', or define `tsmc20P' before running the simulation.
+Error found by spectre in `propagate', during circuit read-in.
+    ERROR (SFE-23): "input.scs" 78: The instance `N1' is referencing an undefined model or subcircuit, `tsmc20N'. Either include the file containing the definition of `tsmc20N', or define `tsmc20N' before running the simulation.
+    ERROR (SFE-23): "input.scs" 79: The instance `N0' is referencing an undefined model or subcircuit, `tsmc20N'. Either include the file containing the definition of `tsmc20N', or define `tsmc20N' before running the simulation.
+    ERROR (SFE-23): "input.scs" 80: The instance `P1' is referencing an undefined model or subcircuit, `tsmc20P'. Either include the file containing the definition of `tsmc20P', or define `tsmc20P' before running the simulation.
+    ERROR (SFE-23): "input.scs" 81: The instance `P0' is referencing an undefined model or subcircuit, `tsmc20P'. Either include the file containing the definition of `tsmc20P', or define `tsmc20P' before running the simulation.
+
+Reading link:  /home/software/cadence-2014/MMSIM141/tools.lnx86/spectre/etc/ahdl/discipline.h
+Reading file:  /home/software/cadence-2014/MMSIM141/tools.lnx86/spectre/etc/ahdl/disciplines.vams
+Reading link:  /home/software/cadence-2014/MMSIM141/tools.lnx86/spectre/etc/ahdl/constants.h
+Reading file:  /home/software/cadence-2014/MMSIM141/tools.lnx86/spectre/etc/ahdl/constants.vams
+Time for Elaboration: CPU = 27.996 ms, elapsed = 241.497 ms.
+Time accumulated: CPU = 217.966 ms, elapsed = 4.18366 s.
+Peak resident memory used = 44.5 Mbytes.
+
+
+Aggregate audit (3:56:14 AM, Sun Nov 6, 2016):
+Time used: CPU = 218 ms, elapsed = 4.18 s, util. = 5.21%.
+Time spent in licensing: elapsed = 109 ms.
+Peak memory used = 44.5 Mbytes.
+Simulation started at: 3:56:10 AM, Sun Nov 6, 2016, ended at: 3:56:14 AM, Sun Nov 6, 2016, with elapsed time (wall clock): 4.18 s.
+spectre completes with 24 errors, 0 warnings, and 0 notices.
+spectre terminated prematurely due to fatal error.

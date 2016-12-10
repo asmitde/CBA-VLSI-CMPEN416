@@ -1,0 +1,5 @@
+
+** Library name: Project_416
+** Cell name: CBA_4bit
+** View name: schematic
+.subckt CBA_4bit a0 a1 a2 a3 b0 b1 b2 b3 cin co3_mux gnd sum0 sum1 sum2 sum3 vdd

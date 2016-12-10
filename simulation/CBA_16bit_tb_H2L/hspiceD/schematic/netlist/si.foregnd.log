@@ -1,0 +1,18 @@
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Dec  9 19:08:05 2016
+End netlisting Dec  9 19:08:07 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Dec  9 19:12:41 2016
+End netlisting Dec  9 19:12:42 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Dec  9 19:13:17 2016
+End netlisting Dec  9 19:13:17 2016
+Loading the file
+'/home/software/cadence-2014/IC616/tools.lnx86/dfII/etc/skill/hnl/hspiceD.ile'.Begin Incremental Netlisting Dec  9 19:16:33 2016
+WARNING (OSSHNL-160): The primitive, 'NCSU_Analog_Parts/pcapacitor/hspiceD', was
+not used in the last netlisting session in this
+current run directory.
+Therefore, re-netlisting all cell views where this
+primitive is instantiated.
+
+End netlisting Dec  9 19:16:35 2016

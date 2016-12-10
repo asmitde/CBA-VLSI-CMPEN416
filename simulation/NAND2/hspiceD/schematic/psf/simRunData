@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Project_416\" \"NAND2\" \"schematic\" \"\")"
+"simulator" "hspiceD"
+"temperature" "25.0"
+"host" ""
+"date" "Nov 23 20:52:38 2016"
+"title" ""
+"analysisList" "()"
+END

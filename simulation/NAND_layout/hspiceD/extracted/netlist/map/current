@@ -1,0 +1,24 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "NAND_layout"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  hierDelim "^"
+  netlistDir "/home/grads/sms821/EE416/simulation/NAND_layout/hspiceD/extracted/netlist"
+ )
+( instViewTable
+ )
+( net
+ )
+( inst
+ )
+( model
+( "assignment4/NAND_layout/extracted" "NAND_layout" )
+ )
+( term
+ )
+( param
+ )
+( "NAND_layout" "ihnl/cds0/map" )
+ )

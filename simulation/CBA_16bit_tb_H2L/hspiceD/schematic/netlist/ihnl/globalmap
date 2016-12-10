@@ -1,0 +1,24 @@
+CADENCE IHNL01070
+$model
+Project_416/invMUX2/schematic invMUX2
+Project_416/inverter/schematic inverter
+Project_416/NAND2/schematic NAND2
+Project_416/carry/schematic carry
+Project_416/CBA_16bit_tb_H2L/schematic CBA_16bit_tb_H2L
+Project_416/Sum/schematic Sum
+Project_416/propagate/schematic propagate
+Project_416/generate/schematic generate
+Project_416/CBA_16bit/extracted CBA_16bit_extracted
+Project_416/full_adder/schematic full_adder
+Project_416/CBA_4bit/schematic CBA_4bit
+Project_416/CBA_16bit/schematic CBA_16bit
+Project_416/setup/schematic setup
+Project_416/bypass/schematic bypass
+Project_416/NOR2/schematic NOR2
+Project_416/XOR2/schematic XOR2
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+$endparam

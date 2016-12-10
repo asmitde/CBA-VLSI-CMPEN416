@@ -1,0 +1,5 @@
+
+** Library name: Project_416
+** Cell name: XOR2
+** View name: schematic
+.subckt XOR2 a axorb b vdd gnd

@@ -1,0 +1,11 @@
+    P2 (Carry G_bar Vdd Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    P1 (Carry P_bar net29 Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    P0 (net29 Cin_bar Vdd Vdd) tsmc20P w=beta*300n l=200n as=beta*300n * 2.5 * (200n) ad=beta*300n * 2.5 * (200n) ps=(2 * beta*300n) + (5 * (200n)) pd=(2 * beta*300n) + (5 * (200n)) m=1 region=sat
+    N2 (net15 G_bar Gnd Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N1 (Carry Cin_bar net15 Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    N0 (Carry P_bar net15 Gnd) tsmc20N w=300n l=200n as=1.5e-13 ad=1.5e-13 ps=1.6u pd=1.6u m=1 region=sat
+    I2 (Gnd Cin Cin_bar Vdd) inverter
+    I1 (Gnd G G_bar Vdd) inverter
+    I0 (Gnd P P_bar Vdd) inverter
+ends carry
+// End of subcircuit definition.

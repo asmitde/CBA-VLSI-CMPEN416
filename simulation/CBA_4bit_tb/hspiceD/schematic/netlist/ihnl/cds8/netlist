@@ -1,0 +1,3 @@
+xi2 a p b vdd gnd XOR2
+.ends propagate
+** End of subcircuit definition.

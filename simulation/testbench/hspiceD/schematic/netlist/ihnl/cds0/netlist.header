@@ -1,0 +1,5 @@
+
+** Library name: Assignment2
+** Cell name: symbol
+** View name: schematic
+.subckt symbol gnd in out vdd

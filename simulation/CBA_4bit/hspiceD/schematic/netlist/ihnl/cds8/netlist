@@ -1,0 +1,14 @@
+mn3 bp p0_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn2 bp p1_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn1 bp p2_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mn0 bp p3_bar gnd gnd tsmc20N L=200e-9 W=300e-9 AD=150e-15 AS=150e-15 PD=1.6e-6 PS=1.6e-6 M=1
+mp3 net33 p0_bar vdd vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp2 net34 p1_bar net33 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp1 net35 p2_bar net34 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+mp0 bp p3_bar net35 vdd tsmc20P L=200e-9 W='beta*300e-9' AD='((beta*300e-9)*2.5)*200e-9' AS='((beta*300e-9)*2.5)*200e-9' PD='(2*beta)*300e-9+1e-6' PS='(2*beta)*300e-9+1e-6' M=1
+xi3 gnd prop3 p3_bar vdd inverter
+xi2 gnd prop2 p2_bar vdd inverter
+xi1 gnd prop0 p0_bar vdd inverter
+xi0 gnd prop1 p1_bar vdd inverter
+.ends bypass
+** End of subcircuit definition.

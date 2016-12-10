@@ -1,0 +1,40 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "CBA_4bit"
+  repList "spectre cmos_sch cmos.sch schematic veriloga"
+  stopList "spectre"
+  globalList "gnd!"
+  hierDelim "."
+  netlistDir "/home/grads/sms821/EE416/simulation/CBA_4bit/spectre/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "Project_416/full_adder/schematic" "full_adder" )
+( "Project_416/CBA_4bit/schematic" "CBA_4bit" )
+( "Project_416/inverter/schematic" "inverter" )
+( "Project_416/carry/schematic" "carry" )
+( "Project_416/Sum/schematic" "Sum" )
+( "Project_416/setup/schematic" "setup" )
+( "Project_416/generate/schematic" "generate" )
+( "Project_416/propagate/schematic" "propagate" )
+ )
+( term
+ )
+( param
+ )
+( "Sum" "ihnl/cds1/map" )
+( "CBA_4bit" "ihnl/cds7/map" )
+( "propagate" "ihnl/cds5/map" )
+( "inverter" "ihnl/cds0/map" )
+( "generate" "ihnl/cds4/map" )
+( "carry" "ihnl/cds2/map" )
+( "full_adder" "ihnl/cds3/map" )
+( "setup" "ihnl/cds6/map" )
+ )

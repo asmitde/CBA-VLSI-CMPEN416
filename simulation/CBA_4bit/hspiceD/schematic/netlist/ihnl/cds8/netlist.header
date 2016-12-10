@@ -1,0 +1,5 @@
+
+** Library name: Project_416
+** Cell name: bypass
+** View name: schematic
+.subckt bypass gnd prop0 prop1 prop2 prop3 vdd bp

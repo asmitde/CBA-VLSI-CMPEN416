@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "NAND2_tb"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  globalList "gnd!"
+  hierDelim "^"
+  netlistDir "/home/grads/sms821/EE416/simulation/NAND2_tb/hspiceD/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "Assignment2/NAND2_tb/schematic" "NAND2_tb" )
+( "Project_416/NAND2/schematic" "NAND2" )
+ )
+( term
+ )
+( param
+ )
+( "NAND2_tb" "ihnl/cds1/map" )
+( "NAND2" "ihnl/cds0/map" )
+ )

@@ -1,0 +1,7 @@
+
+** Library name: Asst_2
+** Cell name: Asst_2_1
+** View name: schematic
+mn0 net02 net1 0 0 tsmc20N L=200e-9 W=1e-6 AD=500e-15 AS=500e-15 PD=3e-6 PS=3e-6 M=1
+v1 net1 0 DC=vgs
+v0 net02 0 DC=vds

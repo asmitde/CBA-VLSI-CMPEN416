@@ -1,0 +1,29 @@
+** Generated for: hspiceD
+** Generated on: Sep 14 20:49:30 2016
+** Design library name: Assignment2
+** Design cell name: layout1
+** Design view name: extracted
+
+
+.TEMP 25.0
+.OPTION
++    ARTIST=2
++    INGOLD=2
++    PARHIER=LOCAL
++    PSF=2
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20N.m"
+.INCLUDE "/home/software/cadence-2009/local/ncsu-cdk-1.6.0.beta/models/hspice/public/tsmc20P.m"
+
+** Library name: Assignment2
+** Cell name: layout1
+** View name: extracted
+m0 vdd in n6 vdd tsmc20P L=200e-9 W=300e-9 AD=190e-15 AS=190e-15 PD=1.5e-6 PS=1.5e-6 M=1
+c1 in gnd 45.59e-18 M=1
+c2 gnd vdd 201.43e-18 M=1
+c3 in gnd 91.36e-18 M=1
+c4 out n6 72.68e-18 M=1
+c5 out n5 72.68e-18 M=1
+c6 out vdd 90.24e-18 M=1
+c7 out gnd 476.61e-18 M=1
+m8 gnd in n5 gnd tsmc20N L=200e-9 W=300e-9 AD=190e-15 AS=190e-15 PD=1.5e-6 PS=1.5e-6 M=1
+.END

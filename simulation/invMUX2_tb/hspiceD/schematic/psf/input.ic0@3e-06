@@ -1,0 +1,22 @@
+* "simulator" "HSPICE" 
+* "version" "H-2013.03 32-BIT"
+* "format" "HSP"
+* "rundate" "21:40:01 11/23/2016 "
+* "netlist" "input.ckt "
+* "runtitle" "** generated for: hspiced"
+* time =  3.000e-06       
+* temperature =  2.500e+01       
+*** BEGIN: Saved Operating Point ***                     
+.option 
++ gmindc= 1.000e-12       
+.nodeset
++ in0 = 1.800e+00       
++ in1 = 1.800e+00       
++ net5 = 1.800e+00       
++ out = 1.001e-05       
++ s = 0.000e+00       
++ xi0^net16 = 5.223e-01       
++ xi0^net22 = 1.492e-05       
++ xi0^net23 = 4.988e-06       
++ xi0^s__ = 1.800e+00       
+***   END: Saved Operating Point ***                     

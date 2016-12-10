@@ -1,0 +1,19 @@
+
+** Library name: Project_416
+** Cell name: NAND2_layout
+** View name: extracted
+m0 vdd a anandb vdd tsmc20P L=200e-9 W=900e-9 AD=450e-15 AS=270e-15 PD=1.9e-6 PS=600e-9 M=1
+m1 anandb b vdd vdd tsmc20P L=200e-9 W=900e-9 AD=270e-15 AS=450e-15 PD=600e-9 PS=1.9e-6 M=1
+c2 b gnd 55.775e-18 M=1
+c3 a gnd 36.86e-18 M=1
+c4 gnd anandb 120.65e-18 M=1
+c5 a anandb 69.66e-18 M=1
+c6 a gnd 81.13e-18 M=1
+c7 a b 69.66e-18 M=1
+c8 vdd anandb 85.09e-18 M=1
+c9 vdd gnd 213.9e-18 M=1
+c10 gnd anandb 108.45e-18 M=1
+c11 b gnd 120.59e-18 M=1
+c12 a gnd 120.59e-18 M=1
+m13 anandb a n6 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=180e-15 PD=1.6e-6 PS=600e-9 M=1
+m14 n6 b gnd gnd tsmc20N L=200e-9 W=600e-9 AD=180e-15 AS=300e-15 PD=600e-9 PS=1.6e-6 M=1

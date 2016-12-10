@@ -1,0 +1,10 @@
+HEADER
+"PSFversion" "1.00"
+"design" "(\"Asst_5\" \"Asst5_Q2\" \"schematic\" \"\")"
+"simulator" "hspiceD"
+"temperature" "25.0"
+"host" ""
+"date" "Oct 17 21:10:22 2016"
+"title" ""
+"analysisList" "()"
+END

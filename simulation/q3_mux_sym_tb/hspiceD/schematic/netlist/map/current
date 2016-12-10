@@ -1,0 +1,28 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "q3_mux_sym_tb"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  globalList "gnd!"
+  hierDelim "^"
+  netlistDir "/home/grads/sms821/EE416/simulation/q3_mux_sym_tb/hspiceD/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "Assignment2/q3_mux_sym_tb/schematic" "q3_mux_sym_tb" )
+( "Asst_6/q3_mux_schematic/schematic" "q3_mux_schematic" )
+ )
+( term
+ )
+( param
+ )
+( "q3_mux_sym_tb" "ihnl/cds1/map" )
+( "q3_mux_schematic" "ihnl/cds0/map" )
+ )

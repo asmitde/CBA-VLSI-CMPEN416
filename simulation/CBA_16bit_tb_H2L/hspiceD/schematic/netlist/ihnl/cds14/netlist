@@ -1,0 +1,56 @@
+
+** Library name: Project_416
+** Cell name: CBA_16bit_tb_H2L
+** View name: schematic
+c15 s15 0 5e-15 M=1
+c16 cout 0 5e-15 M=1
+c14 s14 0 5e-15 M=1
+c13 s13 0 5e-15 M=1
+c12 s12 0 5e-15 M=1
+c11 s11 0 5e-15 M=1
+c10 s10 0 5e-15 M=1
+c9 s9 0 5e-15 M=1
+c8 s8 0 5e-15 M=1
+c7 s7 0 5e-15 M=1
+c6 s6 0 5e-15 M=1
+c5 s5 0 5e-15 M=1
+c4 s4 0 5e-15 M=1
+c3 s3 0 5e-15 M=1
+c2 s2 0 5e-15 M=1
+c1 s1 0 5e-15 M=1
+c0 s0 0 5e-15 M=1
+v0 net7 0 DC=1.8
+v33 a0 0 PULSE 1.8 0 0 40e-9 40e-9 1e-6 2e-6
+v31 a1 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v29 a2 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v27 a3 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v25 a4 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v23 a5 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v21 a6 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v19 a7 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v17 a8 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v15 a9 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v13 a10 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v11 a11 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v9 a12 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v7 a13 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v5 a14 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v3 a15 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v32 b0 0 PULSE 1.8 0 0 40e-9 40e-9 1e-6 2e-6
+v30 b1 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v28 b2 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v26 b3 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v24 b4 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v22 b5 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v20 b6 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v18 b7 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v16 b8 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v14 b9 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v12 b10 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v10 b11 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v8 b12 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+v6 b13 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v4 b14 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v2 b15 0 PULSE 1.8 1.8 0 40e-9 40e-9 1e-6 2e-6
+v1 cin 0 PULSE 0 0 0 40e-9 40e-9 1e-6 2e-6
+xi0 a0 a1 a10 a11 a12 a13 a14 a15 a2 a3 a4 a5 a6 a7 a8 a9 b0 b1 b10 b11 b12 b13 b14 b15 b2 b3 b4 b5 b6 b7 b8 b9 cin cout s0 s1 s10 s11 s12 s13 s14 s15 s2 s3 s4 s5 s6 s7 s8 s9 net7 0 CBA_16bit_extracted

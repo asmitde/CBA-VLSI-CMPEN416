@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"P2n P1n P0n" "NCSU_Analog_Parts_pmos4_spectre"
+"N2n N1n N0n" "NCSU_Analog_Parts_nmos4_spectre"
+"I2n I1n I0n" "inverter"
+"Carryv" ":1v"
+"Cinv" ":2v"
+"Gv" ":3v"
+"Gndv" ":4v"
+"Pv" ":5v"
+"Vddv" ":6v"

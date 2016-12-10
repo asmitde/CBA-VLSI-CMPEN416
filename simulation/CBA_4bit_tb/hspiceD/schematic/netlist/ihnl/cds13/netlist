@@ -1,0 +1,20 @@
+
+** Library name: Project_416
+** Cell name: CBA_4bit_tb
+** View name: schematic
+v14 b1 0 PULSE 1.8 1.8 0
+v12 b0 0 PULSE 1.8 1.8 0
+v19 cin 0 PULSE 0 0 0
+v13 a1 0 PULSE 0 0 0
+v10 a0 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v17 a3 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v15 a2 0 PULSE 0 1.8 0 40e-9 40e-9 1e-6 2e-6
+v18 b3 0 PULSE 0 0 0
+v16 b2 0 PULSE 0 0 0
+c9 sum3 0 5e-15 M=1
+c8 sum2 0 5e-15 M=1
+c7 sum1 0 5e-15 M=1
+c6 sum0 0 5e-15 M=1
+c10 co3_mux 0 5e-15 M=1
+v11 net13 0 DC=1.8
+xi30 a0 a1 a2 a3 b0 b1 b2 b3 cin co3_mux 0 sum0 sum1 sum2 sum3 net13 CBA_4bit

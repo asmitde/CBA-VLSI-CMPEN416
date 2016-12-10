@@ -1,0 +1,10 @@
+simulator( 'spectre )
+design(	 "/home/grads/sms821/EE416/simulation/CBA_4bit/spectre/schematic/netlist/netlist")
+resultsDir( "/home/grads/sms821/EE416/simulation/CBA_4bit/spectre/schematic" )
+analysis('tran ?stop "10u"  )
+desVar(	  "beta" 2	)
+envOption(
+	'analysisOrder  list("tran") 
+)
+temp( 27 ) 
+run()

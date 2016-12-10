@@ -1,0 +1,11 @@
+HEADER
+"PSFversion" "1.00"
+"I3v" "xi3v"
+"I1v" "xi1v"
+"I3n" "NAND2"
+"I1n" "inverter"
+"Bv" "(FUNCTION (plus (root \"I3/B\")))v"
+"Vddv" "(FUNCTION (plus (root \"I3/Vdd\") (root \"I1/Vdd\")))v"
+"Av" "(FUNCTION (plus (root \"I3/A\")))v"
+"gndv" "(FUNCTION (plus (root \"I3/gnd\") (root \"I1/Gnd\")))v"
+"Gv" "(FUNCTION (plus (root \"I1/In_bar\")))v"

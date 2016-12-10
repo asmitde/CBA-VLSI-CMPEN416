@@ -1,0 +1,11 @@
+CADENCE IHNL01070
+$model
+Project_416/inverter/schematic inverter
+Project_416/inverter_tb/schematic inverter_tb
+$endmodel
+$net
+gnd! 0
+$endnet
+$param
+beta beta
+$endparam

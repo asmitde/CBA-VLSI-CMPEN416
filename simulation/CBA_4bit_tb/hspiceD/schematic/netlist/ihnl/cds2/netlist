@@ -1,0 +1,4 @@
+xi0 gnd a a__ vdd inverter
+xi1 a__ a axorb b vdd gnd invMUX2
+.ends XOR2
+** End of subcircuit definition.

@@ -1,0 +1,5 @@
+
+// Library name: Project_416
+// Cell name: full_adder
+// View name: schematic
+subckt full_adder Carry Cin G Gnd P Sum Vdd

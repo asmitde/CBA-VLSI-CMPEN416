@@ -1,0 +1,4 @@
+xi0 a b g gnd vdd generate
+xi1 a b gnd p vdd propagate
+.ends setup
+** End of subcircuit definition.

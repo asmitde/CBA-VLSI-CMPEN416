@@ -1,0 +1,39 @@
+
+** Library name: Asst_6
+** Cell name: q3_mux_layout
+** View name: extracted
+m0 n10 a vdd vdd tsmc20P L=200e-9 W=1.05e-6 AD=525e-15 AS=525e-15 PD=2.05e-6 PS=2.05e-6 M=1
+m1 n11 b vdd vdd tsmc20P L=200e-9 W=1.05e-6 AD=525e-15 AS=525e-15 PD=2.05e-6 PS=2.05e-6 M=1
+m2 out s n11 n14 tsmc20P L=200e-9 W=1.05e-6 AD=525e-15 AS=525e-15 PD=2.05e-6 PS=2.05e-6 M=1
+m3 n7 s vdd vdd tsmc20P L=200e-9 W=1.05e-6 AD=525e-15 AS=525e-15 PD=2.05e-6 PS=2.05e-6 M=1
+m4 out n7 n10 n15 tsmc20P L=200e-9 W=1.05e-6 AD=525e-15 AS=525e-15 PD=2.05e-6 PS=2.05e-6 M=1
+c5 gnd n7 128.04e-18 M=1
+c6 gnd s 860.39e-18 M=1
+c7 b gnd 284.21e-18 M=1
+c8 a gnd 76.63e-18 M=1
+c9 n11 n14 30.84e-18 M=1
+c10 n10 n15 30.84e-18 M=1
+c11 s n10 69.66e-18 M=1
+c12 gnd n11 105.08e-18 M=1
+c13 gnd n10 100.74e-18 M=1
+c14 gnd n9 75.95e-18 M=1
+c15 gnd n8 75.95e-18 M=1
+c16 gnd n7 240.87e-18 M=1
+c17 gnd s 51.78e-18 M=1
+c18 out n15 30.84e-18 M=1
+c19 out n14 39.79e-18 M=1
+c20 out n7 69.66e-18 M=1
+c21 out gnd 315.735e-18 M=1
+c22 b n7 69.66e-18 M=1
+c23 b gnd 30e-18 M=1
+c24 a s 139.32e-18 M=1
+c25 a gnd 461.4e-18 M=1
+c26 vdd n11 30.84e-18 M=1
+c27 vdd n10 30.84e-18 M=1
+c28 vdd n7 30.84e-18 M=1
+c29 vdd gnd 587.22e-18 M=1
+m30 n8 n7 out gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=1.6e-6 PS=1.6e-6 M=1
+m31 gnd n16 n7 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=1.6e-6 PS=1.6e-6 M=1
+m32 n9 s out gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=1.6e-6 PS=1.6e-6 M=1
+m33 gnd b n8 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=1.6e-6 PS=1.6e-6 M=1
+m34 gnd a n9 gnd tsmc20N L=200e-9 W=600e-9 AD=300e-15 AS=300e-15 PD=1.6e-6 PS=1.6e-6 M=1

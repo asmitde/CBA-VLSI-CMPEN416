@@ -1,0 +1,12 @@
+HEADER
+"PSFversion" "1.00"
+"I0v" "xi0v"
+"V2v" "v2v"
+"I0n" "carry"
+"V1v" "v1v"
+"V0v" "v0v"
+"V3v" "v3v"
+"V2n V1n V0n" "NCSU_Analog_Parts_vpulse_hspiceD"
+"C0v" "c0v"
+"V3n" "NCSU_Analog_Parts_vdc_hspiceD"
+"C0n" "NCSU_Analog_Parts_cap_hspiceD"

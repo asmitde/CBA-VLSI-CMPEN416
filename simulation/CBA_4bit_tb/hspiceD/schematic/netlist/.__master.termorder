@@ -1,0 +1,13 @@
+"Project_416.Sum.schematic.termorder" nil
+"Project_416.full_adder.schematic.termorder" (("Carry" "Cin" "G" "Gnd" "P" "Sum" "Vdd") ("Carry" "Cin" "G" "Gnd" "P" "Sum" "Vdd"))
+"Project_416.generate.schematic.termorder" nil
+"Project_416.NOR2.schematic.termorder" (("A" "AnorB" "B" "Vdd" "Gnd") ("A" "AnorB" "B" "Vdd" "Gnd"))
+"Project_416.carry.schematic.termorder" (("Carry" "Cin" "G" "Gnd" "P" "Vdd") ("Carry" "Cin" "G" "Gnd" "P" "Vdd"))
+"Project_416.inverter.schematic.termorder" (("Gnd" "In" "In_bar" "Vdd") ("Gnd" "In" "In_bar" "Vdd"))
+"Project_416.NAND2.schematic.termorder" (("A" "AnandB" "B" "Vdd" "gnd") ("A" "AnandB" "B" "Vdd" "gnd"))
+"Project_416.bypass.schematic.termorder" nil
+"Project_416.setup.schematic.termorder" (("A" "B" "G" "Gnd" "P" "Vdd") ("A" "B" "G" "Gnd" "P" "Vdd"))
+"Project_416.CBA_4bit.schematic.termorder" (("A0" "A1" "A2" "A3" "B0" "B1" "B2" "B3" "Cin" "Co3_mux" "Gnd" "Sum0" "Sum1" "Sum2" "Sum3" "Vdd") ("A0" "A1" "A2" "A3" "B0" "B1" "B2" "B3" "Cin" "Co3_mux" "Gnd" "Sum0" "Sum1" "Sum2" "Sum3" "Vdd"))
+"Project_416.invMUX2.schematic.termorder" nil
+"Project_416.XOR2.schematic.termorder" (("A" "AxorB" "B" "Vdd" "gnd") ("A" "AxorB" "B" "Vdd" "gnd"))
+"Project_416.propagate.schematic.termorder" nil

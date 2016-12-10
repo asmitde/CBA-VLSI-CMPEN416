@@ -1,0 +1,26 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "Asst5_Q2"
+  repList "hspiceD spice cmos_sch cmos.sch schematic"
+  stopList "hspiceD spice"
+  globalList "gnd!"
+  hierDelim "^"
+  netlistDir "/home/grads/sms821/EE416/simulation/Asst5_Q2/hspiceD/schematic/netlist"
+ )
+( instViewTable
+ )
+( net
+( "gnd!" "0" )
+ )
+( inst
+ )
+( model
+( "Asst_5/Asst5_Q2/schematic" "Asst5_Q2" )
+ )
+( term
+ )
+( param
+ )
+( "Asst5_Q2" "ihnl/cds0/map" )
+ )
